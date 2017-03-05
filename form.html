@@ -26,88 +26,107 @@
     </header>
 
     <main>
-      <form class="request-form">
+      <form class="request-form" action="mailto:costa08@mail.ru" enctype="text/plain">
         <fieldset class="request-form__name-block">
           <div class="surname-block">
-            <label class="surname-block__label" for="surname">Фамилия</label>
-            <input class="surname-block__input" type="text" id="surname" value="Укажите фамилию*">
+            <label class="surname-block__label">Фамилия
+              <input class="surname-block__input" type="text" value="Укажите фамилию*">
+            </label>
           </div>
           <div class="name-block">
-            <label class="name-block__label" for="name">Имя</label>
-            <input class="name-block__input" type="text" id="name" value="Введите ваше имя*">
+            <label class="name-block__label">Имя
+              <input class="name-block__input" type="text" value="Введите ваше имя*">
+            </label>
           </div>
           <div class="extra-name-block">
-          <label class="extra-name-block__label" for="extra-name">Отчество</label>
-          <input class="extra-name-block__input" type="text" id="extra-name" value="Ну и отчество тоже*">
+          <label class="extra-name-block__label">Отчество
+            <input class="extra-name-block__input" type="text" value="Ну и отчество тоже*">
+          </label>
           </div>
         </fieldset>
 
         <fieldset class="request-form__achievments-block">
           <p class="request-form__text">Ваши безбашенные достижения в путешествии</p>
           <div class="shark-checkbox">
-            <input class="shark-checkbox__input" type="checkbox" id="shark" checked="">
-            <label class="shark-checkbox__label" for="shark">Сделал селфи с акулой</label>
+            <label class="shark-checkbox__label">
+              <input class="shark-checkbox__input" type="checkbox" checked="">Сделал селфи с акулой
+            </label>
           </div>
 
           <div class="beach-checkbox">
-            <input class="beach-checkbox__input" type="checkbox" id="beach" checked="">
-            <label class="beach-checkbox__label" for="beach">Обгорел на пляже</label>
+            <label class="beach-checkbox__label">
+              <input class="beach-checkbox__input" type="checkbox" checked>Обгорел на пляже
+            </label>
           </div>
 
           <div class="chuck-checkbox">
-            <input class="chuck-checkbox__input" type="checkbox" id="noris">
-            <label class="chuck-checkbox__label" for="noris">Видел Чака Норриса</label>
+
+            <label class="chuck-checkbox__label">
+              <input class="chuck-checkbox__input" type="checkbox">Видел Чака Норриса
+            </label>
           </div>
 
           <div class="gifts-checkbox">
-            <input class="gifts-checkbox__input" type="checkbox" id="gifts">
-            <label class="gifts-checkbox__label" for="gifts">Накупил сувениров</label>
+            <input class="gifts-checkbox__input" type="checkbox">
+            <label class="gifts-checkbox__label">
+              <input class="gifts-checkbox__input" type="checkbox">Накупил сувениров
+            </label>
           </div>
 
           <div class="tower-checkbox">
-            <input class="tower-checkbox__input" type="checkbox" id="tower" checked="">
-            <label class="tower-checkbox__label" for="tower">Удержал башню</label>
+
+            <label class="tower-checkbox__label">
+              <input class="tower-checkbox__input" type="checkbox" checked>Удержал башню
+            </label>
           </div>
 
           <div class="hotel-checkbox">
-            <input class="hotel-checkbox__input" type="checkbox" id="hotel">
-            <label class="hotel-checkbox__label" for="hotel">Разгромил отель</label>
+
+            <label class="hotel-checkbox__label">
+              <input class="hotel-checkbox__input" type="checkbox">Разгромил отель
+            </label>
           </div>
         </fieldset>
 
         <fieldset class="request-form__contact-block">
           <div class="phone-field-block">
-            <label class="phone-field-block__label" for="phone">Номер телефона</label>
-            <input class="phone-field-block__input" type="text" id="phone" value="Номер, пожалуйста">
+            <label class="phone-field-block__label">Номер телефона
+              <input class="phone-field-block__input" type="text" value="Номер, пожалуйста">
+            </label>
           </div>
 
           <div class="mail-field-block">
-            <label class="mail-field-block__label" for="mail">Адрес почты</label>
-            <input class="mail-field-block__input" type="text" id="mail" value="Введите почту*">
+            <label class="mail-field-block__label">Адрес почты
+              <input class="mail-field-block__input" type="text" value="Введите почту*">
+            </label>
           </div>
         </fieldset>
 
         <fieldset class="request-form__application-block">
           <p class="request-form__text">С каким приложение путешествовали?</p>
           <div class="ios-checkbox">
-            <input class="ios-checkbox__input" type="checkbox" id="ios" checked>
-            <label class="ios-checkbox__label" for="ios">Pink для iOS</label>
+            <label class="ios-checkbox__label">
+              <input class="ios-checkbox__input" type="checkbox" checked>Pink для iOS
+            </label>
           </div>
 
           <div class="android-checkbox">
-            <input class="android-checkbox__input" type="checkbox" id="android">
-            <label class="android-checkbox__label" for="android">Pink на Android</label>
+            <label class="android-checkbox__label">
+              <input class="android-checkbox__input" type="checkbox">Pink на Android
+            </label>
           </div>
 
           <div class="windows-checkbox">
-            <input class="windows-checkbox__input" type="checkbox" id="windows">
-            <label class="windows-checkbox__label" for="windows">Windows Phone</label>
+
+            <label class="windows-checkbox__label">
+              <input class="windows-checkbox__input" type="checkbox">Windows Phone
+            </label>
           </div>
         </fieldset>
 
         <fieldset class="request-form__comment-block">
           <p class="request-form__text">Опишите свои эмоции</p>
-          <textarea>Можно прям в красках, не стесняясь в выражениях</textarea>
+          <textarea class="request-form__comment-text">Можно прям в красках, не стесняясь в выражениях</textarea>
         </fieldset>
 
         <button class="btn btn--green">Отправить форму</button>
