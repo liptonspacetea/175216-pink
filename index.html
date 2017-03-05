@@ -2,11 +2,105 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Pink</title>
   </head>
   <body>
+    <header class="page-header">
+      <div class="page-header__nav-block">
+        <div class="page-header__logo">Pink</div>
+        <div class="page-header__menu-btn"></div>
+      </div>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Html Academy</a></li>
+        </ul>
+      </nav>
+
+      <div class="page-header__picture-block"></div>
+
+      <div class="page-header__application-block">
+        <a class="download-link" href="#">Скачать приложение</a>
+
+        <div class="page-header__application-links">
+          <a class="ios-link page-header__application-link" href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="iOS App"></a>
+          <a class="androind-link page-header__application-link" href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Android App"></a>
+          <a class="windows-link page-header__application-link" href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Windows App"></a>
+        </div>
+
+        <p class="page-header__application-text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windowds 8</p>
+
+      </div>
+    </header>
+
+    <main>
+      <section class="information-block">
+        <h2 class="information-block__main-title">Устали от серости мегаполиса?</h2>
+        <h2 class="information-block__main-title">Нам есть, что вам предложить!</h2>
+
+        <h3 class="information-block__title">Поднимает настроение</h3>
+        <p class="information-block__text">Приложение позволит вам победить
+          осеннюю хандру и депрессию буквально в несколько кликов</p>
+
+        <h3 class="information-block__title">Меняет мир вокруг</h3>
+        <p class="information-block__text">Сделайте снимок и украсьте
+          его смайликом или текстовой надписью, чтобы усилить эффект</p>
+
+        <h3 class="information-block__title">Заводит новых друзей</h3>
+        <p class="information-block__text">Ставьте лайки, комментируйте,
+          делитесб фотографиями с друзьями и заводите новых</p>
+
+        <div class="information-block_pic-block"></div>
+      </section>
+
+      <section class="review-block">
+        <div class="review-block__item">
+          <h3 class="review-block__title">Николай Петров</h3>
+          <p class="review-block__text">"Это приложение перевернуло мой мир и позволило по новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях в выложенных фотографиях!"</p>
+        </div>
+
+        <div class="review-block__slider">
+          <div class="review-block__slider-item"></div>
+          <div class="review-block__slider-item"></div>
+          <div class="review-block__slider-item"></div>
+        </div>
+      </section>
+
+      <section class="price-block">
+        <div class="price-block__item price-block--on-slide">
+          <div class="price-block__header price-block--popular">
+            <h3 class="price-block__title">Стандарт</h3>
+            <p class="price-block__price">3,99 USD</p>
+          </div>
+
+          <div class="price-block__feature">Розовый фильтр</div>
+          <div class="price-block__feature">Смайлики</div>
+          <div class="price-block__feature">Комментарии</div>
+        </div>
+
+
+        <div class="price-block__slider">
+          <div class="price-block__slider-item"></div>
+          <div class="price-block__slider-item"></div>
+          <div class="price-block__slider-item"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-block">
+      <h2 class="footer-block__main-title">Остались вопросы? Свяжитесь с нами</h2>
+      <h3 class="footer-block__contact-title">Звоните:</h3>
+      <a class="footer-block__link" href="#">+7 (812) 555-66-66</a>
+      <h3 class="footer-block__contact-title">Пишите:</h3>
+      <a class="footer-block__link" href="#">mail@htmlacademy.ru</a>
+      <h3 class="footer-block__contact-title">Приезжайте в гости:</h3>
+      <p class="footer-block__text">ул.Большая Конюшенная, 19/8</p>
+
+      <div class="footer-block__map"></div>
+    </footer>
 
   </body>
 </html>
