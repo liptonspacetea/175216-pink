@@ -3,55 +3,61 @@
   <head>
     <meta charset="utf-8">
     <title>Pink</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__nav-block">
-        <div class="page-header__logo">Pink</div>
-        <div class="page-header__menu-btn"></div>
+        <div class="page-header__logo"><img src="img/logo-pink-white-mobile.svg" alt="Pink"></div>
+        <div class="page-header__menu-btn"><img src="img/icon-menu-burger.svg"></div>
       </div>
 
       <nav class="main-nav">
         <ul class="main-nav__items">
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Html Academy</a></li>
+          <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">Html Academy</a></li>
         </ul>
       </nav>
 
-      <div class="page-header__picture-block"></div>
+      <div class="page-header__picture-block page-header__picture-block--index">
+        <div class="page-header__iphone-hand"></div>
+      </div>
 
       <div class="page-header__application-block">
-        <a class="download-link" href="#">Скачать приложение</a>
+        <a class="page-header__download-link download-link" href="#">Скачать приложение</a>
 
         <div class="page-header__application-links">
-          <a class="ios-link page-header__application-link" href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="iOS App"></a>
-          <a class="androind-link page-header__application-link" href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Android App"></a>
-          <a class="windows-link page-header__application-link" href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Windows App"></a>
+          <a class="application-link page-header__application-link" href="#"><img src="img/logo-apple.svg" alt="iOS App"></a>
+          <a class="application-link page-header__application-link" href="#"><img src="img/logo-android.svg" alt="Android App"></a>
+          <a class="application-link page-header__application-link" href="#"><img src="img/logo-microsoft.svg" alt="Windows App"></a>
         </div>
 
         <p class="page-header__application-text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windowds 8</p>
-
       </div>
     </header>
 
     <main>
       <section class="information-block">
-        <h2 class="information-block__main-title">Устали от серости мегаполиса?</h2>
-        <h2 class="information-block__main-title">Нам есть, что вам предложить!</h2>
+        <div class="information-block__title-block information-block--bg-white">
+          <h2 class="information-block__main-title information-block--first-title">Устали от серости мегаполиса?</h2>
+          <h2 class="information-block__main-title">Нам есть, что вам предложить!</h2>
+        </div>
 
-        <h3 class="information-block__title">Поднимает настроение</h3>
-        <p class="information-block__text">Приложение позволит вам победить
-          осеннюю хандру и депрессию буквально в несколько кликов</p>
+        <div class="information-block__advantages-block information-block--bg-grey">
+          <h3 class="information-block__title">Поднимает настроение</h3>
+          <p class="information-block__text">Приложение позволит вам победить
+            осеннюю хандру и депрессию буквально в несколько кликов</p>
 
-        <h3 class="information-block__title">Меняет мир вокруг</h3>
-        <p class="information-block__text">Сделайте снимок и украсьте
-          его смайликом или текстовой надписью, чтобы усилить эффект</p>
+          <h3 class="information-block__title">Меняет мир вокруг</h3>
+          <p class="information-block__text">Сделайте снимок и украсьте
+            его смайликом или текстовой надписью, чтобы усилить эффект</p>
 
-        <h3 class="information-block__title">Заводит новых друзей</h3>
-        <p class="information-block__text">Ставьте лайки, комментируйте,
-          делитесб фотографиями с друзьями и заводите новых</p>
+          <h3 class="information-block__title">Заводит новых друзей</h3>
+          <p class="information-block__text">Ставьте лайки, комментируйте,
+            делитесб фотографиями с друзьями и заводите новых</p>
+        </div>
 
         <div class="information-block_pic-block"></div>
       </section>
@@ -62,10 +68,10 @@
           <p class="review-block__text">"Это приложение перевернуло мой мир и позволило по новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях в выложенных фотографиях!"</p>
         </div>
 
-        <div class="review-block__slider">
-          <div class="review-block__slider-item"></div>
-          <div class="review-block__slider-item"></div>
-          <div class="review-block__slider-item"></div>
+        <div class="review-block__slider slider">
+          <div class="slider__control slider__control--active-slide"></div>
+          <div class="slider__control"></div>
+          <div class="slider__control"></div>
         </div>
       </section>
 
@@ -76,30 +82,31 @@
             <p class="price-block__price">3,99 USD</p>
           </div>
 
-          <div class="price-block__feature">Розовый фильтр</div>
-          <div class="price-block__feature">Смайлики</div>
-          <div class="price-block__feature">Комментарии</div>
-        </div>
+          <div class="price-block__feature">
+            <div class="price-block__fiture-item price-block__fiture-item--yes">Розовый фильтр</div>
+            <div class="price-block__fiture-item price-block__fiture-item--yes">Смайлики</div>
+            <div class="price-block__fiture-item price-block__fiture-item--no">Комментарии</div>
+          </div>
 
-
-        <div class="price-block__slider">
-          <div class="price-block__slider-item"></div>
-          <div class="price-block__slider-item"></div>
-          <div class="price-block__slider-item"></div>
+          <div class="price-block__slider slider">
+            <div class="slider__control"></div>
+            <div class="slider__control slider__control--active-slide"></div>
+            <div class="slider__control"></div>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer-block">
-      <h2 class="footer-block__main-title">Остались вопросы? Свяжитесь с нами</h2>
-      <h3 class="footer-block__contact-title">Звоните:</h3>
-      <a class="footer-block__link" href="#">+7 (812) 555-66-66</a>
-      <h3 class="footer-block__contact-title">Пишите:</h3>
-      <a class="footer-block__link" href="#">mail@htmlacademy.ru</a>
-      <h3 class="footer-block__contact-title">Приезжайте в гости:</h3>
-      <p class="footer-block__text">ул.Большая Конюшенная, 19/8</p>
+    <footer class="contact-block">
+      <h2 class="contact-block__main-title">Остались вопросы? Свяжитесь с нами</h2>
+      <h3 class="contact-block__contact-title">Звоните:</h3>
+      <a class="contact-block__link" href="#">+7 (812) 555-66-66</a>
+      <h3 class="contact-block__contact-title">Пишите:</h3>
+      <a class="contact-block__link" href="#">mail@htmlacademy.ru</a>
+      <h3 class="contact-block__contact-title">Приезжайте в гости:</h3>
+      <p class="contact-block__text">ул.Большая<br> Конюшенная, 19/8</p>
 
-      <div class="footer-block__map"></div>
+      <div class="contact-block__map"></div>
     </footer>
 
   </body>

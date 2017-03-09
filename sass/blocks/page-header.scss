@@ -1,0 +1,100 @@
+.page-header {
+  width: 320px;
+}
+
+.page-header__nav-block {
+  background-color: #283645;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000000;
+}
+
+.page-header__logo {
+  display: inline-block;
+  background: #283645;
+  padding: 22px 0 22px 20px;
+  cursor: pointer;
+}
+
+.page-header__menu-btn {
+  display: inline-block;
+  padding: 21px 20px 0 0;
+  cursor: pointer;
+}
+
+.page-header__picture-block {
+  width: 320px;
+  background: #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat center center;
+
+  &--index {
+    position: relative;
+    height: 395px;
+  }
+
+  &--contest-text {
+    box-sizing: border-box;
+    padding: 35px 20px 60px 20px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  &--photo-text{
+    box-sizing: border-box;
+    padding: 100px 75px 85px 100px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #ffffff;
+    text-align: center;
+  }
+}
+
+.page-header__iphone-hand {
+  position: absolute;
+  bottom: 0;
+  width: 320px;
+  height: 314px;
+  background: url("../img/iphone-5-in-hand-png.png") no-repeat center center;
+}
+
+.page-header__application-block {
+  background-color: #1d2631;
+  text-align: center;
+}
+
+.page-header__download-link {
+  display: inline-block;
+  margin-top: 28px;
+}
+
+.page-header__application-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.page-header__application-links {
+  padding-top: 32px;
+}
+
+.page-header__application-link:nth-child(1),
+.page-header__application-link:nth-child(2) {
+  margin-right: 33px;
+}
+
+.page-header__text {
+  margin: 0;
+}
+
+.page-header__decription {
+  text-align: center;
+}
+
+.page-header__description-text {
+  margin: 0;
+  padding: 50px 25px;
+  font-size: 14px;
+  line-height: 30px;
+}

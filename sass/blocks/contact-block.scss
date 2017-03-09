@@ -1,0 +1,44 @@
+.contact-block {
+  width: 320px;
+  text-align: center;
+}
+
+.contact-block__main-title {
+  margin: 0;
+  padding-top: 50px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #283645;
+  font-weight: 300;
+}
+
+.contact-block__contact-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #283645;
+}
+
+.contact-block__link {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #d22856;
+}
+
+.contact-block__text {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #d22856;
+}
+
+.contact-block__map {
+  width: 320px;
+  height: 200px;
+  background: url('../img/map.jpg');
+}

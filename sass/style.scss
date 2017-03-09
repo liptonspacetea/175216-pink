@@ -1,0 +1,26 @@
+@import "global/common.scss";
+@import "global/layout.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/download-link.scss";
+@import "blocks/information-block.scss";
+@import "blocks/review-block.scss";
+@import "blocks/slider.scss";
+@import "blocks/price-block.scss";
+@import "blocks/contact-block.scss";
+@import "blocks/page-footer.scss";
+
+
+/*блоки со страницы с формой(конкурс) */
+@import "blocks/text-form-block.scss";
+@import "blocks/request-form.scss";
+@import "blocks/checkbox-block.scss";
+@import "blocks/radio-button-block.scss";
+@import "blocks/button.scss";
+@import "blocks/popup.scss";
+
+/*блоки со страницы с фотографиями(конкурс) */
+@import "blocks/photo-block.scss";
+@import "blocks/upload-block.scss";
+
+@import "blocks/like-button.scss";

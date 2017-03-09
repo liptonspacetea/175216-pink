@@ -1,0 +1,21 @@
+.slider {
+  font-size: 0;
+}
+
+.slider__control {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  font-size: 14px;
+  width: 6px;
+  height: 6px;
+  background-color: #bec2c7;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+
+  &--active-slide {
+    background-color: #ffffff;
+    border: 3px solid #283645;
+    border-radius: 50%;
+  }
+}

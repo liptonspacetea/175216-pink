@@ -1,0 +1,23 @@
+.text-form-block {
+  margin-left: 20px;
+  margin-bottom: 25px;
+}
+
+.text-form-block__label {
+  margin-left: 23px;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #d22856;
+
+  &--name-field {
+    display: block;
+  }
+}
+
+.text-form-block__input {
+  padding: 16px 0 16px 20px;
+  border: 1px solid #e5e5e5;
+  font-size: 18px;
+  line-height: 30px;
+}

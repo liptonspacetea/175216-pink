@@ -3,140 +3,126 @@
   <head>
     <meta charset="utf-8">
     <title>Pink</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__nav-block">
-        <div class="page-header__logo">Pink</div>
-        <div class="page-header__menu-btn"></div>
+        <div class="page-header__logo"><img src="img/logo-pink-white-mobile.svg" alt="Pink"></div>
+        <div class="page-header__menu-btn"><img src="img/icon-menu-burger.svg" alt="menu"></div>
       </div>
 
       <nav class="main-nav">
         <ul class="main-nav__items">
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Html Academy</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">Html Academy</a></li>
         </ul>
       </nav>
 
-      <div class="page-header__picture-block">
+      <div class="page-header__picture-block page-header__picture-block--photo-text">
         <p class="page-header__text">Фотографии пользователей</p>
       </div>
     </header>
 
-    <main class="main-content">
-      <p class="main-content__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-
+    <main class="container container--align-centr">
       <section class="photo-block">
+        <p class="photo-block__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <div class="photo-block__photo-item">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="Photo">
+          <img src="../img/panorama-mobile@1x.jpg" width="320" height="157" alt="Photo">
           <div class="photo-block__pick-of-the-day">Панорама дня</div>
         </div>
 
         <div class="photo-block__photo-content">
           <p class="photo-block__name-desctiption"><span class="photo-block__name">Анна</span>(5 минут назад)</p>
           <p class="photo-block__photo-description">Прыгать или нет? Напишите в комментарии свой совет и смотрите пряму трансляцию в перископе, задавайте свои вопросы!</p>
-          <div class="like-count">
-            <button class="like-count__button like-count--pink">Нравится: 215</button>
+          <div class="photo-block__like-btn">
+            <button class="like-button like-button--photo-page" type="button">Нравится: 215</button>
           </div>
         </div>
       </section>
 
       <section class="photo-block">
         <div class="photo-block__photo-item">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="Photo">
+          <img src="../img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Photo">
         </div>
 
         <div class="photo-block__photo-content">
           <p class="photo-block__name-desctiption"><span class="photo-block__name">Левон</span>(5 часов назад)</p>
           <p class="photo-block__photo-description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <div class="like-count">
-            <button class="like-count__button like-count--pink">Нравится: 356</button>
+          <div class="photo-block__like-btn">
+            <button class="like-button like-button--photo-page" type="button">Нравится: 356</button>
           </div>
         </div>
       </section>
 
       <section class="photo-block">
         <div class="photo-block__photo-item">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="Photo">
+          <img src="../img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Photo">
         </div>
 
         <div class="photo-block__photo-content">
           <p class="photo-block__name-desctiption"><span class="photo-block__name">Антон</span>(12 часов назад)</p>
           <p class="photo-block__photo-description">Соседи будут рады!</p>
-          <div class="like-count">
-            <button class="like-count__button like-count--pink">Нравится: 666</button>
+          <div class="photo-block__like-btn">
+            <button class="like-button like-button--photo-page" type="button">Нравится: 666</button>
           </div>
         </div>
       </section>
 
       <section class="photo-block">
         <div class="photo-block__photo-item">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="Photo">
+          <img src="../img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Photo">
         </div>
 
         <div class="photo-block__photo-content">
           <p class="photo-block__name-desctiption"><span class="photo-block__name">Борис</span>(20 часов назад)</p>
           <p class="photo-block__photo-description">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <div class="like-count">
-            <button class="like-count__button like-count--pink">Нравится: 215</button>
+          <div class="photo-block__like-btn">
+            <button class="like-button like-button--photo-page" type="button">Нравится: 215</button>
           </div>
         </div>
       </section>
 
       <section class="photo-block">
         <div class="photo-block__photo-item">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="Photo">
+          <img src="../img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Photo">
         </div>
 
         <div class="photo-block__photo-content">
           <p class="photo-block__name-desctiption"><span class="photo-block__name">Сергей</span>(25 часов назад)</p>
           <p class="photo-block__photo-description">Самая кубанская в мире!</p>
-          <div class="like-count">
-            <button class="like-count__button like-count--pink">Нравится: 4</button>
+          <div class="photo-block__like-btn">
+            <button class="like-button like-button--photo-page" type="button">Нравится: 4</button>
           </div>
         </div>
       </section>
 
       <section class="photo-block">
         <div class="photo-block__photo-item">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="Photo">
+          <img src="../img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Photo">
         </div>
 
         <div class="photo-block__photo-content">
           <p class="photo-block__name-desctiption"><span class="photo-block__name">Максим</span>(40 часов назад)</p>
           <p class="photo-block__photo-description">Где снег то?</p>
-          <div class="like-count">
-            <button class="like-count__button like-count--pink">Нравится: 150</button>
+          <div class="photo-block__like-btn">
+            <button class="like-button like-button--photo-page" type="button">Нравится: 150</button>
           </div>
         </div>
       </section>
 
       <section class="photo-block">
         <div class="photo-block__photo-item">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="Photo">
-        </div>
-
-        <div class="photo-block__photo-content">
-          <p class="photo-block__name-desctiption"><span class="photo-block__name">Максим</span>(40 часов назад)</p>
-          <p class="photo-block__photo-description">Где снег то?</p>
-          <div class="like-count">
-            <button class="like-count__button like-count--pink">Нравится: 150</button>
-          </div>
-        </div>
-      </section>
-
-      <section class="photo-block">
-        <div class="photo-block__photo-item">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="Photo">
+          <img src="../img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Photo">
         </div>
 
         <div class="photo-block__photo-content">
           <p class="photo-block__name-desctiption"><span class="photo-block__name">Надежда</span>(45 часов назад)</p>
           <p class="photo-block__photo-description">Всем GM и взаимные лайки!</p>
-          <div class="like-count">
-            <button class="like-count__button like-count--pink">Нравится: 2560</button>
+          <div class="photo-block__like-btn">
+            <button class="like-button like-button--photo-page" type="button">Нравится: 2560</button>
           </div>
         </div>
       </section>
@@ -144,34 +130,42 @@
       <section class="upload-block">
         <p class="upload-block__title-info">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
 
-        <div class="upload-block__photo">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="Photo">
-        </div>
-
-        <div class="upload-block__modificators">
-          <a class="crop-button"></a>
-          <a class="color-button"></a>
-          <a class="contrast-button"></a>
-
-          <div class="upload-block__scale">
-            <div class="upload-block__scale-round"></div>
+        <div class="upload-block__container">
+          <div class="upload-block__photo">
+            <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Photo">
           </div>
 
-          <button class="post-btn">Запостить</button>
-          <button class="post-btn">Запостить</button>
+          <div class="upload-block__modificators">
+            <a class="upload-block__btn upload-block__btn--crop-button"></a>
+            <a class="upload-block__btn upload-block__btn--color-button"></a>
+            <a class="upload-block__btn upload-block__btn--contrast-button"></a>
+
+            <div class="upload-block__scale">
+              <div class="upload-block__scale-round"></div>
+            </div>
+
+            <div class="upload-block__button-block">
+              <button class="upload-block__button">Запостить</button>
+              <button class="upload-block__button">Отмена</button>
+            </div>
+          </div>
         </div>
+
+
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="logo"></div>
+      <div class="page-footer__logo">
+        <img src="img/logo-pink-blue-mobile.svg" alt="logo">
+      </div>
       <div class="page-footer__social-block">
-        <a class="twitter" href="#" target="_blank"></a>
-        <a class="facebook" href="#" target="_blank"></a>
-        <a class="youtube" href="#" target="_blank"></a>
+        <a class="page-footer__social-link page-footer__social-link--twitter" href="#" target="_blank"></a>
+        <a class="page-footer__social-link page-footer__social-link--facebook" href="#" target="_blank"></a>
+        <a class="page-footer__social-link page-footer__social-link--youtube" href="#" target="_blank"></a>
       </div>
       <div class="page-footer__development-block">
-        <a class="htmlacademy" href="#" target="_blank">Разработано</a>
+        <a class="page-footer__academy-link" href="#" target="_blank">Разработано</a>
       </div>
     </footer>
 

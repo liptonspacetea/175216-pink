@@ -3,161 +3,151 @@
   <head>
     <meta charset="utf-8">
     <title>Pink</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__nav-block">
-        <div class="page-header__logo">Pink</div>
-        <div class="page-header__menu-btn"></div>
+        <div class="page-header__logo"><img src="img/logo-pink-white-mobile.svg" alt="Pink"></div>
+        <div class="page-header__menu-btn"><img src="img/icon-menu-burger.svg"></div>
       </div>
 
       <nav class="main-nav">
         <ul class="main-nav__items">
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Html Academy</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">Html Academy</a></li>
         </ul>
       </nav>
 
-      <div class="page-header__picture-block">
+      <div class="page-header__picture-block page-header__picture-block--contest-text">
         <p class="page-header__text">Конкурс на самое безбашенное путешествие с Пинк</p>
+      </div>
+
+      <div class="page-header__decription">
+        <p class="page-header__description-text">Поделитесь своей историей и получите
+        шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
       </div>
     </header>
 
     <main>
       <form class="request-form" action="mailto:costa08@mail.ru" enctype="text/plain">
         <fieldset class="request-form__name-block">
-          <div class="surname-block">
-            <label class="surname-block__label">Фамилия
-              <input class="surname-block__input" type="text" value="Укажите фамилию*">
-            </label>
+          <div class="text-form-block">
+            <label class="text-form-block__label text-form-block__label--name-field" for="surname">Фамилия</label>
+            <input class="text-form-block__input" id="surname" type="text" value="Укажите фамилию*">
           </div>
-          <div class="name-block">
-            <label class="name-block__label">Имя
-              <input class="name-block__input" type="text" value="Введите ваше имя*">
-            </label>
+
+          <div class="text-form-block">
+            <label class="text-form-block__label text-form-block__label--name-field" for="name">Имя</label>
+            <input class="text-form-block__input" id="name" type="text" value="Введите ваше имя*">
           </div>
-          <div class="extra-name-block">
-          <label class="extra-name-block__label">Отчество
-            <input class="extra-name-block__input" type="text" value="Ну и отчество тоже*">
-          </label>
+          <div class="text-form-block">
+          <label class="text-form-block__label text-form-block__label--name-field" for="extra-name">Отчество</label>
+          <input class="text-form-block__input" id="extra-name" type="text" value="Ну и отчество тоже*">
           </div>
         </fieldset>
 
         <fieldset class="request-form__achievments-block">
           <p class="request-form__text">Ваши безбашенные достижения в путешествии</p>
-          <div class="shark-checkbox">
-            <label class="shark-checkbox__label">
-              <input class="shark-checkbox__input" type="checkbox" checked="">Сделал селфи с акулой
-            </label>
+          <div class="checkbox-block">
+            <input class="checkbox-block__input" id="shark" type="checkbox" checked>
+            <label class="checkbox-block__label" for="shark">Сделал селфи с акулой</label>
           </div>
 
-          <div class="beach-checkbox">
-            <label class="beach-checkbox__label">
-              <input class="beach-checkbox__input" type="checkbox" checked>Обгорел на пляже
-            </label>
+          <div class="checkbox-block">
+            <input class="checkbox-block__input" id="beach" type="checkbox" checked>
+            <label class="checkbox-block__label" for="beach">Обгорел на пляже</label>
           </div>
 
-          <div class="chuck-checkbox">
-
-            <label class="chuck-checkbox__label">
-              <input class="chuck-checkbox__input" type="checkbox">Видел Чака Норриса
-            </label>
+          <div class="checkbox-block">
+            <input class="checkbox-block__input" id="norris" type="checkbox">
+            <label class="checkbox-block__label" for="norris">Видел Чака Норриса</label>
           </div>
 
-          <div class="gifts-checkbox">
-            <input class="gifts-checkbox__input" type="checkbox">
-            <label class="gifts-checkbox__label">
-              <input class="gifts-checkbox__input" type="checkbox">Накупил сувениров
-            </label>
+          <div class="checkbox-block">
+            <input class="checkbox-block__input" id="gifts" type="checkbox">
+            <label class="checkbox-block__label" for="gifts">Накупил сувениров</label>
           </div>
 
-          <div class="tower-checkbox">
-
-            <label class="tower-checkbox__label">
-              <input class="tower-checkbox__input" type="checkbox" checked>Удержал башню
-            </label>
+          <div class="checkbox-block">
+            <input class="checkbox-block__input" id="tower" type="checkbox" checked>
+            <label class="checkbox-block__label" for="tower">Удержал башню</label>
           </div>
 
-          <div class="hotel-checkbox">
-
-            <label class="hotel-checkbox__label">
-              <input class="hotel-checkbox__input" type="checkbox">Разгромил отель
-            </label>
+          <div class="checkbox-block">
+            <input class="checkbox-block__input" id="towel" type="checkbox">
+            <label class="checkbox-block__label" for="towel">Разгромил отель</label>
           </div>
         </fieldset>
 
         <fieldset class="request-form__contact-block">
-          <div class="phone-field-block">
-            <label class="phone-field-block__label">Номер телефона
-              <input class="phone-field-block__input" type="text" value="Номер, пожалуйста">
-            </label>
+          <div class="text-form-block">
+            <label class="text-form-block__label" for="phone">Номер телефона</label>
+            <input class="text-form-block__input" id="phone" type="text" value="Номер, пожалуйста">
           </div>
 
-          <div class="mail-field-block">
-            <label class="mail-field-block__label">Адрес почты
-              <input class="mail-field-block__input" type="text" value="Введите почту*">
-            </label>
+          <div class="text-form-block">
+            <label class="text-form-block__label" for="mail">Адрес почты</label>
+            <input class="text-form-block__input" id="mail" type="text" value="Введите почту*">
           </div>
         </fieldset>
 
         <fieldset class="request-form__application-block">
           <p class="request-form__text">С каким приложение путешествовали?</p>
-          <div class="ios-checkbox">
-            <label class="ios-checkbox__label">
-              <input class="ios-checkbox__input" type="checkbox" checked>Pink для iOS
-            </label>
+          <div class="radio-button-block request-form__application-checkbox">
+            <input class="radio-button-block__input" id="ios" type="checkbox" checked>
+            <label class="radio-button-block__label" for="ios">Pink для iOS</label>
           </div>
 
-          <div class="android-checkbox">
-            <label class="android-checkbox__label">
-              <input class="android-checkbox__input" type="checkbox">Pink на Android
-            </label>
+          <div class="radio-button-block request-form__application-checkbox">
+            <input class="radio-button-block__input" id="android" type="checkbox">
+            <label class="radio-button-block__label" for="android">Pink на Android</label>
           </div>
 
-          <div class="windows-checkbox">
-
-            <label class="windows-checkbox__label">
-              <input class="windows-checkbox__input" type="checkbox">Windows Phone
-            </label>
+          <div class="radio-button-block request-form__application-checkbox">
+            <input class="radio-button-block__input" id="windows" type="checkbox">
+            <label class="radio-button-block__label" for="windows">Windows Phone</label>
           </div>
         </fieldset>
 
         <fieldset class="request-form__comment-block">
           <p class="request-form__text">Опишите свои эмоции</p>
-          <textarea class="request-form__comment-text">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <textarea class="request-form__comment-text" rows="6" cols="36">Можно прям в красках, не стесняясь в выражениях</textarea>
         </fieldset>
 
-        <button class="btn btn--green">Отправить форму</button>
+        <button class="request-form__btn button button--green">Отправить форму</button>
         <p class="request-form__required-text"><span class="request-form__star-icon">*</span> - Обязательные поля</p>
       </form>
 
-      <div class="popup-success">
-        <h3 class="popup-success__title">Ваша заявка отправлена</h3>
-        <p class="popup-success__text">Спасибо за ваше участие,
+      <div class="popup">
+        <h3 class="popup__title">Ваша заявка отправлена</h3>
+        <p class="popup__text">Спасибо за ваше участие,
         ваша заявка уже поступила к нам.В ближайшее время мы
         рассмотрим ее и оповестим вас.</p>
-        <button class="btn btn--green">Ок</button>
+        <button class="popup__btn button button--green">Ок</button>
       </div>
 
-      <div class="popup-failure">
-        <h3 class="popup-failure__title">Что-то пошло не так!</h3>
-        <p class="popup-failures__text">Проверьте поля, выделенные
+      <div class="popup">
+        <h3 class="popup__title">Что-то пошло не так!</h3>
+        <p class="popup__text">Проверьте поля, выделенные
           красным, скорее всего вы забыли их заполнить.</p>
-        <button class="btn btn--green">Закрыть окно</button>
+        <button class="popup__btn button button--green">Закрыть окно</button>
       </div>
     </main>
 
     <footer class="page-footer">
-      <div class="logo"></div>
+      <div class="page-footer__logo">
+        <img src="img/logo-pink-blue-mobile.svg">
+      </div>
       <div class="page-footer__social-block">
-        <a class="twitter" href="#" target="_blank"></a>
-        <a class="facebook" href="#" target="_blank"></a>
-        <a class="youtube" href="#" target="_blank"></a>
+        <a class="page-footer__social-link page-footer__social-link--twitter" href="#" target="_blank"></a>
+        <a class="page-footer__social-link page-footer__social-link--facebook" href="#" target="_blank"></a>
+        <a class="page-footer__social-link page-footer__social-link--youtube" href="#" target="_blank"></a>
       </div>
       <div class="page-footer__development-block">
-        <a class="htmlacademy" href="#" target="_blank">Разработано</a>
+        <a class="page-footer__academy-link" href="#" target="_blank">Разработано</a>
       </div>
     </footer>
 
