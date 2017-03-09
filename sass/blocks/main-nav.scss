@@ -1,0 +1,24 @@
+.main-nav__items {
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav__item {
+  padding: 0;
+  text-align: center;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #485461;
+
+}
+
+.main-nav__link {
+  display: block;
+  width: 320px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #283645;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+}

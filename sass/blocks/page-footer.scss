@@ -1,0 +1,76 @@
+.page-footer {
+  text-align: center;
+  width: 320px;
+}
+
+.page-footer__logo {
+  margin-top: 61px;
+}
+
+.page-footer__social-block {
+  font-size: 0;
+  margin-top: 40px;
+}
+
+.page-footer__social-link {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  width: 45px;
+  height: 45px;
+  margin-right: 12px;
+  background-color: #ffffff;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &--twitter::before {
+    width: 18px;
+    height: 14px;
+    background: url('../img/icon-twitter.png');
+  }
+
+  &--facebook::before {
+    width: 9px;
+    height: 18px;
+    background: url('../img/icon-facebook.png');
+  }
+
+  &--youtube::before {
+    width: 15px;
+    height: 13px;
+    background: url('../img/icon-youtube.png');
+  }
+}
+
+.page-footer__development-block {
+  margin-top: 40px;
+}
+
+.page-footer__academy-link {
+  position: relative;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  text-decoration: none;
+  padding-right: 48px;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 27px;
+    height: 34px;
+    background: url('../img/logo-htmlacademy.svg');
+    right: 0;
+    top: -10px;
+  }
+}

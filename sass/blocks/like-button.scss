@@ -1,0 +1,26 @@
+.like-button {
+  position: relative;
+  padding: 0;
+  padding-left: 32px;
+  border: none;
+  font-size: 12px;
+  line-height: 24px;
+  color: #d22856;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 13px;
+    height: 12px;
+    background: url('../img/icon-heart.svg');
+    top: 6px;
+    left: 0;
+  }
+
+  &--photo-page {
+    background-color: #f2f2f2;
+  }
+}

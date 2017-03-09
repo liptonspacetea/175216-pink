@@ -1,0 +1,16 @@
+.button {
+  width: 280px;
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  font-size: 18px;
+  line-height: 63px;
+  cursor: pointer;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  &--green {
+    background-color: #2aab6d;
+  }
+}
