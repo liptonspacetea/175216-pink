@@ -42,3 +42,35 @@
   height: 200px;
   background: url('../img/map.jpg');
 }
+
+@media (min-width: 700px) {
+  .contact-block {
+    width: 700px;
+  }
+
+  .contact-block__section {
+    display: inline-block;
+    width: 300px;
+    margin-top: 60px;
+  }
+
+  .contact-block__map {
+    width: 700px;
+    height: 377px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-block {
+    width: 1200px;
+  }
+
+  .contact-block__flex-wrapper {
+    padding: 0 120px;
+  }
+
+  .contact-block__map {
+    width: 1200px;
+    height: 503px;
+  }
+}

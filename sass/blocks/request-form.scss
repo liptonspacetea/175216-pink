@@ -1,3 +1,8 @@
+.request-form {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .request-form__achievments-block {
   background-color: #f2f2f2;
   text-align: center;
@@ -26,4 +31,80 @@
 .request-form__btn {
   margin-left: 20px;
   margin-top: 48px;
+}
+
+@media (min-width: 700px) {
+  .request-form {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+  }
+
+  .request-form__name-block {
+    order: -1;
+  }
+
+  .request-form__application-block {
+    order: 0;
+  }
+
+  .request-form__contact-block {
+    order: 1;
+  }
+
+  .request-form__achievments-block {
+    order: 2;
+  }
+
+  .request-form__comment-block {
+    order: 3;
+  }
+
+  .request-form__button-block {
+    order: 4;
+    font-size: 0;
+  }
+
+  .request-form__btn,
+  .request-form__required-text {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+  }
+
+  .request-form__required-text {
+    margin: 0;
+    padding: 70px 0 0 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .request-form {
+    width: 940px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .request-form__name-block {
+    width: 470px
+  }
+
+  .request-form__contact-block {
+    margin-top: 50px;
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .request-form__achievments-block {
+    width: 940px;
+  }
+
+  .request-form__achievments-block {
+    width: 940px;
+  }
+
+  .request-form__comment-block {
+    width: 940px;
+  }
 }

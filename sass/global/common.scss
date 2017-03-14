@@ -1,3 +1,7 @@
+body {
+  font-family: "Open Sans", "Tahoma", sans-serif;
+}
+
 fieldset {
   border: none;
   margin: 0;
@@ -6,8 +10,18 @@ fieldset {
 
 .container {
   width: 320px;
+  text-align: center;
+  margin: 0 auto;
+}
 
-  &--align-centr {
-    text-align: center;
+@media (min-width: 700px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
   }
 }

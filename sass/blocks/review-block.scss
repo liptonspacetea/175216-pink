@@ -1,10 +1,12 @@
 
 .review-block {
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 45px;
   text-align: center;
 }
 
 .review-block__item {
-  text-align: center;
   background-color: #ffffff;
 }
 
@@ -19,4 +21,35 @@
   font-size: 14px;
   line-height: 30px;
   padding: 27px 20px 40px 20px;
+}
+
+.review-block__description {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .review-block {
+    width: 700px;
+    padding: 45px 40px 0 40px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .review-block__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review-block__description {
+    display: block;
+    margin: 0;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .review-block__text {
+    order: -1;
+  }
+
+
 }

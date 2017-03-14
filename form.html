@@ -3,23 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>Pink</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__nav-block">
-        <div class="page-header__logo"><img src="img/logo-pink-white-mobile.svg" alt="Pink"></div>
-        <div class="page-header__menu-btn"><img src="img/icon-menu-burger.svg" alt="menu"></div>
-      </div>
+      <div class="page-header__navigation">
+        <div class="page-header__nav-block">
+          <div class="page-header__logo"><img src="img/logo-pink-white-mobile.svg" alt="Pink"></div>
+          <div class="page-header__menu-btn"><img src="img/icon-menu-cross.svg" alt="menu"></div>
+        </div>
 
-      <nav class="main-nav">
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
-          <li class="main-nav__item"><a class="main-nav__link">Конкурс</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">Html Academy</a></li>
-        </ul>
-      </nav>
+        <nav class="main-nav">
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">Html Academy</a></li>
+          </ul>
+        </nav>
+      </div>
 
       <div class="page-header__picture-block page-header__picture-block--contest-text">
         <p class="page-header__text">Конкурс на самое безбашенное путешествие с Пинк</p>
@@ -83,12 +86,12 @@
         </fieldset>
 
         <fieldset class="request-form__contact-block">
-          <div class="text-form-block">
+          <div class="text-form-block text-form-block--contact">
             <label class="text-form-block__label" for="phone">Номер телефона</label>
             <input class="text-form-block__input" id="phone" type="text" value="Номер, пожалуйста">
           </div>
 
-          <div class="text-form-block">
+          <div class="text-form-block text-form-block--contact">
             <label class="text-form-block__label" for="mail">Адрес почты</label>
             <input class="text-form-block__input" id="mail" type="text" value="Введите почту*">
           </div>
@@ -117,8 +120,10 @@
           <textarea class="request-form__comment-text" rows="6" cols="36">Можно прям в красках, не стесняясь в выражениях</textarea>
         </fieldset>
 
-        <button class="request-form__btn button button--green">Отправить форму</button>
-        <p class="request-form__required-text"><span class="request-form__star-icon">*</span> - Обязательные поля</p>
+        <div class="request-form__button-block">
+          <button class="request-form__btn button button--green">Отправить форму</button>
+          <p class="request-form__required-text"><span class="request-form__star-icon">*</span> - Обязательные поля</p>
+        </div>
       </form>
 
       <div class="popup">
@@ -138,16 +143,18 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__logo">
-        <img src="img/logo-pink-blue-mobile.svg" alt="logo">
-      </div>
-      <div class="page-footer__social-block">
-        <a class="page-footer__social-link page-footer__social-link--twitter" href="#" target="_blank"></a>
-        <a class="page-footer__social-link page-footer__social-link--facebook" href="#" target="_blank"></a>
-        <a class="page-footer__social-link page-footer__social-link--youtube" href="#" target="_blank"></a>
-      </div>
-      <div class="page-footer__development-block">
-        <a class="page-footer__academy-link" href="#" target="_blank">Разработано</a>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img src="img/logo-pink-blue-mobile.svg" alt="logo">
+        </div>
+        <div class="page-footer__social-block">
+          <a class="page-footer__social-link page-footer__social-link--twitter" href="#" target="_blank"></a>
+          <a class="page-footer__social-link page-footer__social-link--facebook" href="#" target="_blank"></a>
+          <a class="page-footer__social-link page-footer__social-link--youtube" href="#" target="_blank"></a>
+        </div>
+        <div class="page-footer__development-block">
+          <a class="page-footer__academy-link" href="#" target="_blank">Разработано</a>
+        </div>
       </div>
     </footer>
 
