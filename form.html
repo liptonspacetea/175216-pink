@@ -53,7 +53,7 @@
         </fieldset>
 
         <fieldset class="request-form__achievments-block">
-          <p class="request-form__text">Ваши безбашенные достижения в путешествии</p>
+          <legend class="request-form__text" align="center">Ваши безбашенные достижения в путешествии</legend>
           <div class="checkbox-block">
             <input class="checkbox-block__input" id="shark" type="checkbox" checked>
             <label class="checkbox-block__label" for="shark">Сделал селфи с акулой</label>
@@ -86,19 +86,22 @@
         </fieldset>
 
         <fieldset class="request-form__contact-block">
-          <div class="text-form-block text-form-block--contact">
-            <label class="text-form-block__label" for="phone">Номер телефона</label>
-            <input class="text-form-block__input" id="phone" type="text" value="Номер, пожалуйста">
-          </div>
+          <legend class="request-form__text request-form__text--contacts" align="center">Контактная информация</legend>
+          <div class="request-form__contacts-wrapper">
+            <div class="text-form-block text-form-block--contact">
+              <label class="text-form-block__label" for="phone">Номер телефона</label>
+              <input class="text-form-block__input" id="phone" type="text" value="Номер, пожалуйста">
+            </div>
 
-          <div class="text-form-block text-form-block--contact">
-            <label class="text-form-block__label" for="mail">Адрес почты</label>
-            <input class="text-form-block__input" id="mail" type="text" value="Введите почту*">
+            <div class="text-form-block text-form-block--contact">
+              <label class="text-form-block__label" for="mail">Адрес почты</label>
+              <input class="text-form-block__input" id="mail" type="text" value="Введите почту*">
+            </div>
           </div>
         </fieldset>
 
         <fieldset class="request-form__application-block">
-          <p class="request-form__text">С каким приложение путешествовали?</p>
+          <legend class="request-form__text" align="center">С каким приложение путешествовали?</legend>
           <div class="radio-button-block request-form__application-checkbox">
             <input class="radio-button-block__input" id="ios" type="checkbox" checked>
             <label class="radio-button-block__label" for="ios">Pink для iOS</label>
@@ -116,7 +119,7 @@
         </fieldset>
 
         <fieldset class="request-form__comment-block">
-          <p class="request-form__text">Опишите свои эмоции</p>
+          <legend class="request-form__text" align="center">Опишите свои эмоции</legend>
           <textarea class="request-form__comment-text" rows="6" cols="36">Можно прям в красках, не стесняясь в выражениях</textarea>
         </fieldset>
 
@@ -127,18 +130,25 @@
       </form>
 
       <div class="popup">
-        <h3 class="popup__title">Ваша заявка отправлена</h3>
-        <p class="popup__text">Спасибо за ваше участие,
-        ваша заявка уже поступила к нам.В ближайшее время мы
-        рассмотрим ее и оповестим вас.</p>
-        <button class="popup__btn button button--green">Ок</button>
+        <div class="popup__container">
+          <h3 class="popup__title">Ваша заявка отправлена</h3>
+          <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам.В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+        </div>
+        <div class="popup__btn-wrapper">
+          <button class="popup__btn button button--green">Ок</button>
+        </div>
       </div>
 
       <div class="popup">
-        <h3 class="popup__title">Что-то пошло не так!</h3>
-        <p class="popup__text">Проверьте поля, выделенные
-          красным, скорее всего вы забыли их заполнить.</p>
-        <button class="popup__btn button button--green">Закрыть окно</button>
+        <div class="popup__container">
+          <h3 class="popup__title">Что-то пошло не так!</h3>
+          <p class="popup__text">Проверьте поля, выделенные
+            красным, скорее всего вы забыли их заполнить.
+          </p>
+        </div>
+        <div class="popup__btn-wrapper">
+          <button class="popup__btn button button--green">Закрыть окно</button>
+        </div>
       </div>
     </main>
 

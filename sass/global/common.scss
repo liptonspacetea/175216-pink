@@ -18,10 +18,16 @@ fieldset {
   .container {
     width: 700px;
   }
+
+  fieldset {
+    border: 2px solid #e5e5e5;
+  }
 }
 
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
   }
+
+
 }

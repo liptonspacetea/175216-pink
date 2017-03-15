@@ -15,6 +15,10 @@
   line-height: 18px;
   color: #d22856;
   text-transform: uppercase;
+
+  &--contacts {
+    display: none;
+  }
 }
 
 .request-form__contact-block {
@@ -76,6 +80,11 @@
     margin: 0;
     padding: 70px 0 0 40px;
   }
+
+  .request-form__text--contacts {
+    display: block;
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -92,6 +101,9 @@
   .request-form__contact-block {
     margin-top: 50px;
     width: 940px;
+  }
+
+  .request-form__contacts-wrapper {
     display: flex;
     justify-content: space-between;
   }
@@ -106,5 +118,10 @@
 
   .request-form__comment-block {
     width: 940px;
+  }
+
+  .request-form__button-block {
+    display: flex;
+    justify-content: space-between;
   }
 }

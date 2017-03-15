@@ -40,6 +40,8 @@
   }
 
   .text-form-block--contact {
-    width: 400px;
+    width: 375px;
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
