@@ -12,6 +12,10 @@
   color: #283645;
   cursor: pointer;
 
+  &:hover::before {
+    border-color: #283645;
+  }
+
   &::before {
     position: absolute;
     display: block;
@@ -27,6 +31,10 @@
 
 .checkbox-block__input {
   display: none;
+
+  &:checked + .checkbox-block__label::before {
+    border-color: #d22856;
+  }
 
   &:checked + .checkbox-block__label::after {
     position: absolute;

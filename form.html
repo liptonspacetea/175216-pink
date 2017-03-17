@@ -39,16 +39,16 @@
         <fieldset class="request-form__name-block">
           <div class="text-form-block">
             <label class="text-form-block__label text-form-block__label--name-field" for="surname">Фамилия</label>
-            <input class="text-form-block__input" id="surname" type="text" value="Укажите фамилию*">
+            <input class="text-form-block__input" id="surname" type="text" placeholder="Укажите фамилию*">
           </div>
 
           <div class="text-form-block">
             <label class="text-form-block__label text-form-block__label--name-field" for="name">Имя</label>
-            <input class="text-form-block__input" id="name" type="text" value="Введите ваше имя*">
+            <input class="text-form-block__input" id="name" type="text" placeholder="Введите ваше имя*">
           </div>
           <div class="text-form-block">
           <label class="text-form-block__label text-form-block__label--name-field" for="extra-name">Отчество</label>
-          <input class="text-form-block__input" id="extra-name" type="text" value="Ну и отчество тоже*">
+          <input class="text-form-block__input" id="extra-name" type="text" placeholder="Ну и отчество тоже*">
           </div>
         </fieldset>
 
@@ -129,27 +129,27 @@
         </div>
       </form>
 
-      <div class="popup">
-        <div class="popup__container">
-          <h3 class="popup__title">Ваша заявка отправлена</h3>
-          <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам.В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-        </div>
-        <div class="popup__btn-wrapper">
-          <button class="popup__btn button button--green">Ок</button>
-        </div>
-      </div>
-
-      <div class="popup">
+      <div class="popup popup--fail">
         <div class="popup__container">
           <h3 class="popup__title">Что-то пошло не так!</h3>
           <p class="popup__text">Проверьте поля, выделенные
             красным, скорее всего вы забыли их заполнить.
           </p>
-        </div>
-        <div class="popup__btn-wrapper">
-          <button class="popup__btn button button--green">Закрыть окно</button>
+          <button class="popup__btn popup__btn-success button button--green button--popup" type="button">Закрыть окно</button>
         </div>
       </div>
+
+      <div class="popup popup--success">
+        <div class="popup__container popup__container--success">
+          <h3 class="popup__title">Ваша заявка отправлена</h3>
+          <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+        </div>
+        <div class="popup__btn-wrapper">
+          <button class="popup__btn button button--green button--popup button--success" type="button">Ок</button>
+        </div>
+      </div>
+
+
     </main>
 
     <footer class="page-footer">

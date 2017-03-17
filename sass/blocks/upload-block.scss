@@ -74,6 +74,10 @@
   border: 2px solid #d22856;
   border-radius: 50%;
   cursor: pointer;
+
+  &:active {
+    background: #d22856;
+  }
 }
 
 .upload-block__button-block {
@@ -87,14 +91,41 @@
   padding: 15px 88px;
   font-size: 18px;
   line-height: 18px;
+  font-weight: bold;
   background: none;
-  border: 3px solid #dddfe0;
   border-radius: 35px;
   cursor: pointer;
+  outline: none;
 
-  &:hover {
-    color: #d22856;
+  &--post {
     border: 3px solid #d22856;
+    color: #d22856;
+
+    &:hover {
+      color: #ffffff;
+      background: #d22856;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &--cancel {
+    padding: 15px 102px;
+    color: rgba(40, 54, 69, 0.1);
+    border: 3px solid rgba(40, 54, 69, 0.1);
+
+    &:hover {
+      color: rgba(40, 54, 69, 0.3);
+      border-color: rgba(40, 54, 69, 0.3);
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background: #b5b9be;
+      border: 3px solid #b5b9be;
+    }
   }
 }
 
