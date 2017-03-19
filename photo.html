@@ -8,21 +8,28 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__navigation">
-        <div class="page-header__nav-block">
+      <div class="page-header__inner">
+        <div class="page-header__navigation">
           <div class="page-header__logo"><img src="img/logo-pink-white-mobile.svg" alt="Pink"></div>
-          <div class="page-header__menu-btn"><img src="img/icon-menu-cross.svg" alt="menu"></div>
+          <div class="page-header__menu-btn burger">
+            <span class="burger__line burger__line--top"></span>
+            <span class="burger__line burger__line--middle"></span>
+            <span class="burger__line burger__line--bottom"></span>
+          </div>
         </div>
-
-        <nav class="main-nav">
-          <ul class="main-nav__items">
-            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">Html Academy</a></li>
-          </ul>
-        </nav>
       </div>
+
+      <nav class="main-nav main-nav--close main-nav--no-js">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">Html Academy</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
 
       <div class="page-header__picture-block page-header__picture-block--photo-text">
         <p class="page-header__text">Фотографии пользователей</p>
@@ -30,6 +37,10 @@
     </header>
 
     <main class="container">
+
+      <section class="promo">
+      </section>
+
       <section class="photo-block photo-block--big-photo">
         <p class="photo-block__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <div class="photo-block__photo-item photo-block__photo-item--big-photo">
@@ -183,6 +194,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/main.js" type="text/javascript"></script>
 
   </body>
 </html>

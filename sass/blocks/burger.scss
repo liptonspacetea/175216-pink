@@ -33,3 +33,24 @@
     bottom: 0;
   }
 }
+
+.burger--cross .burger__line:nth-child(1) {
+  width: 31px;
+  height: 5px;
+  top: 10px;
+  left: 20px;
+  transform: rotate(45deg);
+}
+
+.burger--cross .burger__line:nth-child(3) {
+  width: 31px;
+  height: 5px;
+  top: 10px;
+  left: 20px;
+  transform: rotate(-45deg);
+}
+
+.burger--cross .burger__line:nth-child(2) {
+  opacity: 0;
+
+}

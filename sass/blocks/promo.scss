@@ -1,0 +1,145 @@
+.promo {
+  position: relative;
+  background: #1d2631;
+}
+
+.promo__inner {
+  padding: 0 20px;
+}
+
+.promo__image {
+
+
+  &--index {
+    min-height: 396px;
+    background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
+    background-position: center bottom, center;
+    background-size: auto, cover;
+    background-repeat: no-repeat;
+  }
+
+  &--form {
+    background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+}
+
+.promo__pic {
+  vertical-align:bottom
+}
+
+.promo__page-title {
+  margin: 0;
+  color: #ffffff;
+}
+
+.promo__aplication {
+  text-align: center;
+}
+
+.promo__title {
+  display: none;
+}
+
+.promo__download {
+  display: inline-block;
+  margin-top: 28px;
+}
+
+.promo__app-links {
+  padding-top: 32px;
+}
+
+.promo__app-link:nth-child(1),
+.promo__app-link:nth-child(2) {
+  margin-right: 33px;
+}
+
+.promo__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  padding-bottom: 31px;
+  padding-top: 26px;
+}
+
+.promo__image-inner {
+  padding: 0 47px;
+  text-align: center;
+}
+
+.promo__page-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+
+  &--form {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+}
+
+.promo__decription {
+  background: #ffffff;
+  text-align: center;
+}
+
+.promo__decription-inner {
+  padding: 0 20px;
+}
+
+.page-header__description-text {
+  margin: 0;
+  padding-top: 48px;
+  padding-bottom: 32px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+}
+
+@media (min-width: 700px) {
+  .promo__title {
+    display: block;
+    width: 190px;
+    margin: 0 auto;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    color: #ffffff;
+  }
+
+  .promo__image--index {
+    min-height: 618px;
+    background-image: url(../img/iphone-6_copy.png), url(../img/bg-back-mobile@1x.jpg);
+  }
+
+  .promo__inner {
+    padding: 0 40px;
+    position: absolute;
+    top: 105px;
+  }
+
+  .promo__text {
+    width: 300px;
+    font-weight: 300;
+  }
+
+  .promo__page-title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .promo__page-title {
+    padding-top: 140px;
+  }
+
+  .promo__image-inner {
+    padding: 0 190px;
+  }
+}

@@ -1,15 +1,23 @@
 .contact-block {
-  width: 320px;
   text-align: center;
+}
+
+.contact-block__inner {
+  padding: 0 40px;
 }
 
 .contact-block__main-title {
   margin: 0;
   padding-top: 50px;
+  padding-bottom: 40px;
   font-size: 24px;
   line-height: 30px;
-  color: #283645;
   font-weight: 300;
+  color: #283645;
+}
+
+.contact-block__section {
+  margin-bottom: 30px;
 }
 
 .contact-block__contact-title {
@@ -44,12 +52,16 @@
 }
 
 @media (min-width: 700px) {
-  .contact-block {
-    width: 700px;
+  .contact-block__main-title {
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 40px;
+    line-height: 40px;
   }
 
   .contact-block__section {
     display: inline-block;
+    vertical-align: top;
     width: 300px;
     margin-top: 60px;
   }
@@ -62,11 +74,7 @@
 
 @media (min-width: 1200px) {
   .contact-block {
-    width: 1200px;
-  }
-
-  .contact-block__flex-wrapper {
-    padding: 0 120px;
+    max-width: 1200px;
   }
 
   .contact-block__map {

@@ -1,3 +1,15 @@
+.main-nav--close {
+  display: none;
+}
+
+.main-nav--no-js {
+  display: block;
+}
+
+.main-nav--open {
+  display: block;
+}
+
 .main-nav__items {
   padding: 0;
   margin: 0;
@@ -9,7 +21,7 @@
   text-align: center;
   border-bottom: 1px solid #000000;
   border-top: 1px solid #485461;
-
+  padding: 15px 0;
 }
 
 .main-nav__link {
@@ -34,27 +46,25 @@
 
 @media (min-width: 1200px) {
   .main-nav {
+    display: block;
     width: 620px;
   }
 
   .main-nav__items {
-    font-size: 0;
     display: flex;
     justify-content: space-between;
   }
 
   .main-nav__item {
-    display: inline-block;
-    vertical-align: top;
-    font-size: 18px;
     border: none;
+    padding: 0;
 
   }
 
   .main-nav__link {
-    font-weight: 300;
-    line-height: 18px;
     padding: 51px 0;
+    line-height: 18px;
+    font-weight: 300;
     background: none;
   }
 

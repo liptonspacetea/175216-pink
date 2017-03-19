@@ -1,11 +1,14 @@
 .information-block {
-  width: 320px;
-  margin: 0 auto;
   text-align: center;
+}
+
+.information-block__inner {
+  padding: 0 20px;
 }
 
 .information-block__title-block {
   background-color: #ffffff;
+  margin-bottom: 83px;
 }
 
 .information-block__main-title {
@@ -17,9 +20,9 @@
   font-weight: 300;
 }
 
-.information-block__wrapper{
+.information-block__feature-inner {
+  padding: 0 20px;
   background-color: #f2f2f2;
-  margin-top: 83px;
 }
 
 .information-block__title {
@@ -35,25 +38,6 @@
   margin-top: 25px;
   font-size: 14px;
   line-height: 24px;
-}
-
-.information-block_pic-block {
-  position: relative;
-  background: url('../img/iphone-screen.jpg');
-  width: 157px;
-  height: 320px;
-  margin: 0 auto;
-  margin-top: 40px;
-
-  &::before {
-    display: block;
-    position: absolute;
-    content: "";
-    width: 157px;
-    height: 37px;
-    background-color: #ffffff;
-    bottom: 0;
-  }
 }
 
 .information-block__science {

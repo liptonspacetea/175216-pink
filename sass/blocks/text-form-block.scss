@@ -1,7 +1,8 @@
 .text-form-block {
-  width: 280px;
-  margin-left: 20px;
   margin-bottom: 25px;
+
+  &--form {
+  }
 }
 
 .text-form-block__label {
@@ -17,6 +18,8 @@
 }
 
 .text-form-block__input {
+  width: 280px;
+  box-sizing: border-box;
   padding: 16px 0 16px 20px;
   border: 2px solid #e5e5e5;
   font-size: 18px;
