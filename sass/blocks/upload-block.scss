@@ -1,6 +1,15 @@
-.upload-block__flex-container{
-  padding-top: 20px;
+.upload-block {
+  text-align: center;
+}
+
+.upload-block__inner{
+  padding: 20px;
+  padding-bottom: 0;
   background-color: #f2f2f2;
+}
+
+.upload-block__photo {
+  width: 100%;
 }
 
 .upload-block__title-info {
@@ -87,6 +96,8 @@
 }
 
 .upload-block__button {
+  display: block;
+  margin: 0 auto;
   margin-top: 12px;
   padding: 15px 88px;
   font-size: 18px;
@@ -135,7 +146,7 @@
     padding: 0 40px;
   }
 
-  .upload-block__flex-container {
+  .upload-block__inner {
     display: flex;
     justify-content: space-around;
   }
