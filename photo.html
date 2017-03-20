@@ -3,16 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Pink</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__nav-block">
-        <div class="page-header__logo"><img src="img/logo-pink-white-mobile.svg" alt="Pink"></div>
-        <div class="page-header__menu-btn"><img src="img/icon-menu-burger.svg" alt="menu"></div>
+      <div class="page-header__inner">
+        <div class="page-header__navigation">
+          <div class="page-header__logo"><img src="img/logo-pink-white-mobile.svg" alt="Pink"></div>
+          <div class="page-header__menu-btn burger">
+            <span class="burger__line burger__line--top"></span>
+            <span class="burger__line burger__line--middle"></span>
+            <span class="burger__line burger__line--bottom"></span>
+          </div>
+        </div>
       </div>
 
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--close main-nav--no-js">
         <ul class="main-nav__items">
           <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link">Фотографии</a></li>
@@ -20,21 +27,28 @@
           <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">Html Academy</a></li>
         </ul>
       </nav>
+    </header>
+
+
 
       <div class="page-header__picture-block page-header__picture-block--photo-text">
         <p class="page-header__text">Фотографии пользователей</p>
       </div>
     </header>
 
-    <main class="container container--align-centr">
-      <section class="photo-block">
+    <main class="container">
+
+      <section class="promo">
+      </section>
+
+      <section class="photo-block photo-block--big-photo">
         <p class="photo-block__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        <div class="photo-block__photo-item">
+        <div class="photo-block__photo-item photo-block__photo-item--big-photo">
           <img src="../img/panorama-mobile@1x.jpg" width="320" height="157" alt="Photo">
           <div class="photo-block__pick-of-the-day">Панорама дня</div>
         </div>
 
-        <div class="photo-block__photo-content">
+        <div class="photo-block__photo-content photo-block__photo-content--big-photo">
           <p class="photo-block__name-desctiption"><span class="photo-block__name">Анна</span>(5 минут назад)</p>
           <p class="photo-block__photo-description">Прыгать или нет? Напишите в комментарии свой совет и смотрите пряму трансляцию в перископе, задавайте свои вопросы!</p>
           <div class="photo-block__like-btn">
@@ -43,7 +57,7 @@
         </div>
       </section>
 
-      <section class="photo-block">
+      <section class="photo-block photo-block--pic">
         <div class="photo-block__photo-item">
           <img src="../img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Photo">
         </div>
@@ -57,7 +71,7 @@
         </div>
       </section>
 
-      <section class="photo-block">
+      <section class="photo-block photo-block--pic">
         <div class="photo-block__photo-item">
           <img src="../img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Photo">
         </div>
@@ -71,7 +85,7 @@
         </div>
       </section>
 
-      <section class="photo-block">
+      <section class="photo-block photo-block--pic">
         <div class="photo-block__photo-item">
           <img src="../img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Photo">
         </div>
@@ -85,7 +99,7 @@
         </div>
       </section>
 
-      <section class="photo-block">
+      <section class="photo-block photo-block--pic">
         <div class="photo-block__photo-item">
           <img src="../img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Photo">
         </div>
@@ -99,7 +113,7 @@
         </div>
       </section>
 
-      <section class="photo-block">
+      <section class="photo-block photo-block--pic">
         <div class="photo-block__photo-item">
           <img src="../img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Photo">
         </div>
@@ -113,7 +127,7 @@
         </div>
       </section>
 
-      <section class="photo-block">
+      <section class="photo-block photo-block--pic">
         <div class="photo-block__photo-item">
           <img src="../img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Photo">
         </div>
@@ -130,44 +144,58 @@
       <section class="upload-block">
         <p class="upload-block__title-info">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
 
-        <div class="upload-block__container">
+        <div class="upload-block__flex-container">
           <div class="upload-block__photo">
             <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Photo">
           </div>
 
           <div class="upload-block__modificators">
-            <a class="upload-block__btn upload-block__btn--crop-button"></a>
-            <a class="upload-block__btn upload-block__btn--color-button"></a>
-            <a class="upload-block__btn upload-block__btn--contrast-button"></a>
-
-            <div class="upload-block__scale">
-              <div class="upload-block__scale-round"></div>
+            <div class="upload-block__filters">
+              <a class="upload-block__btn upload-block__btn--crop-button"></a>
+              <a class="upload-block__btn upload-block__btn--color-button"></a>
+              <a class="upload-block__btn upload-block__btn--contrast-button"></a>
             </div>
 
-            <div class="upload-block__button-block">
-              <button class="upload-block__button">Запостить</button>
-              <button class="upload-block__button">Отмена</button>
+            <div class="upload-block__scale-block">
+              <div class="upload-block__scale">
+                <div class="upload-block__scale-round"></div>
+              </div>
+
+              <div class="upload-block__scale upload-block__scale--color-button">
+                <div class="upload-block__scale-round"></div>
+              </div>
+
+              <div class="upload-block__scale upload-block__scale--contrast-button">
+                <div class="upload-block__scale-round"></div>
+              </div>
+
+              <div class="upload-block__button-block">
+                <button class="upload-block__button upload-block__button--post" type="button">Запостить</button>
+                <button class="upload-block__button upload-block__button--cancel" type="button">Отмена</button>
+              </div>
             </div>
           </div>
         </div>
-
-
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__logo">
-        <img src="img/logo-pink-blue-mobile.svg" alt="logo">
-      </div>
-      <div class="page-footer__social-block">
-        <a class="page-footer__social-link page-footer__social-link--twitter" href="#" target="_blank"></a>
-        <a class="page-footer__social-link page-footer__social-link--facebook" href="#" target="_blank"></a>
-        <a class="page-footer__social-link page-footer__social-link--youtube" href="#" target="_blank"></a>
-      </div>
-      <div class="page-footer__development-block">
-        <a class="page-footer__academy-link" href="#" target="_blank">Разработано</a>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img src="img/logo-pink-blue-mobile.svg" alt="logo">
+        </div>
+        <div class="page-footer__social-block">
+          <a class="page-footer__social-link page-footer__social-link--twitter" href="#" target="_blank"></a>
+          <a class="page-footer__social-link page-footer__social-link--facebook" href="#" target="_blank"></a>
+          <a class="page-footer__social-link page-footer__social-link--youtube" href="#" target="_blank"></a>
+        </div>
+        <div class="page-footer__development-block">
+          <a class="page-footer__academy-link" href="#" target="_blank">Разработано</a>
+        </div>
       </div>
     </footer>
+
+    <script src="js/main.js" type="text/javascript"></script>
 
   </body>
 </html>

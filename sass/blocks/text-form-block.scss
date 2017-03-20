@@ -1,6 +1,8 @@
 .text-form-block {
-  margin-left: 20px;
   margin-bottom: 25px;
+
+  &--form {
+  }
 }
 
 .text-form-block__label {
@@ -16,8 +18,42 @@
 }
 
 .text-form-block__input {
+  width: 280px;
+  box-sizing: border-box;
   padding: 16px 0 16px 20px;
-  border: 1px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
   font-size: 18px;
   line-height: 30px;
+  outline: none;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active,
+  &:focus {
+    border-color: #d22856;
+  }
+}
+
+@media (min-width: 700px) {
+  .text-form-block__label {
+    display: inline-block;
+  }
+
+  .text-form-block__input {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .text-form-block__input {
+    width: 250px;
+  }
+
+  .text-form-block--contact {
+    width: 375px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

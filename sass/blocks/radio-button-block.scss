@@ -11,6 +11,10 @@
   color: #283645;
   cursor: pointer;
 
+  &:hover::before {
+    border-color: #283645;
+  }
+
   &::before {
     position: absolute;
     display: block;
@@ -28,6 +32,10 @@
 .radio-button-block__input {
   display: none;
 
+  &:checked + .radio-button-block__label::before {
+    border-color: #d22856;
+  }
+
   &:checked + .radio-button-block__label::after {
     position: absolute;
     display: block;
@@ -36,8 +44,8 @@
     height: 14px;
     border: 1px solid #d22856;
     border-radius: 50%;
-    top: 4px;
-    left: 12px;
+    top: 3px;
+    left: 11px;
     background-color: #d22856;
   }
 }

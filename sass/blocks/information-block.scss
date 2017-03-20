@@ -2,19 +2,26 @@
   text-align: center;
 }
 
+.information-block__inner {
+  padding: 0 20px;
+}
+
+.information-block__title-block {
+  background-color: #ffffff;
+  margin-bottom: 83px;
+}
+
 .information-block__main-title {
   padding-top: 45px;
   margin: 0;
   font-size: 24px;
   line-height: 24px;
   color: #283645;
+  font-weight: 300;
 }
 
-.information-block__advantages-block {
-  margin-top: 83px;
-}
-
-.information-block__advantages-block{
+.information-block__feature-inner {
+  padding: 0 20px;
   background-color: #f2f2f2;
 }
 
@@ -33,21 +40,66 @@
   line-height: 24px;
 }
 
-.information-block_pic-block {
-  position: relative;
-  background: url('../img/iphone-screen.jpg');
-  width: 157px;
-  height: 320px;
-  margin: 0 auto;
-  margin-top: 40px;
+.information-block__science {
+  clear: both;
+  content: "";
+  display: none;
+}
 
-  &::before {
-    display: block;
-    position: absolute;
-    content: "";
-    width: 157px;
-    height: 37px;
-    background-color: #ffffff;
-    bottom: 0;
+.information-block_pic-clock {
+  float: left;
+  width: 238px;
+  height: 276px;
+  background: url('../img/clock-tablet.png') no-repeat center center;
+}
+
+.information-block_description {
+  float: right;
+  width: 310px;
+}
+
+.information-block__science-title {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.information-block__science-text {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+
+
+@media (min-width: 700px) {
+  .information-block {
+    width: 700px;
+    padding: 0 40px;
+    box-sizing: border-box;
   }
+
+  .information-block__wrapper {
+    clear: both;
+    display: table;
+    content: "";
+  }
+
+  .information-block__advantages-block {
+    float: right;
+    width: 300px;
+    text-align: left;
+  }
+
+  .information-block_pic-block {
+    float: left;
+    width: 310px;
+    text-align: left;
+    background-repeat: no-repeat;
+
+  }
+
+  .information-block__science {
+    display: table;
+  }
+
+
 }

@@ -1,44 +1,150 @@
 .price-block {
+  width: 320px;
+  margin: 0 auto;
   text-align: center;
   margin-top: 130px;
 }
 
-.price-block__header {
-  width: 320px;
-  text-align: center;
-  background-color: #283645;
+.price-block__table {
+  border-collapse: collapse;
 }
 
-.price-block__title {
-  padding-top: 24px;
-  margin: 0;
+.price-block__table-header-block {
+  width: 320px;
+  box-sizing: border-box;
+  background-color: #283645;
   color: #ffffff;
+  text-transform: uppercase;
+  border: 1px solid grey;
+  text-align: center;
+
+  &--none,
+  &--base,
+  &--unlimit {
+    display: none;
+  }
+
+  &--none {
+    border: none;
+    background: #ffffff;
+  }
+}
+
+.price-block__type {
+  margin: 0;
+  margin-top: 25px;
   font-size: 18px;
   line-height: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 
 .price-block__price {
   padding-bottom: 24px;
+  padding-top: 10px;
   margin: 0;
   color: #ffffff;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
 }
-.price-block__feature {
-  text-align: left;
-}
 
-.price-block__fiture-item {
-  padding: 25px 0 25px 45px;
+.price-block__feature {
+  position: relative;
+  text-align: left;
+  padding: 25px 0 25px 23px;;
   font-size: 14px;
   color: #283645;
   line-height: 30px;
   text-transform: uppercase;
+  border: 1px solid #e5e5e5;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 19px;
+    right: 39px;
+    width: 31px;
+    height: 21px;
+    background: url('../img/icon-yes.svg') no-repeat;
+  }
+}
+
+.price-block__feature-icon {
+  display: none;
 }
 
 .price-block__slider {
   margin-top: 40px;
+}
+
+@media (min-width: 700px) {
+  .price-block {
+    width: 620px;
+    padding: 0 40px;
+  }
+  .price-block__table-header-block {
+    width: 154px;
+
+    &--none,
+    &--base,
+    &--unlimit {
+      display: table-cell;
+    }
+
+    &--none {
+      background: #ffffff;
+      border: none;
+    }
+  }
+
+  .price-block__feature::before {
+    display: none;
+  }
+
+  .price-block__feature {
+    padding: 10px 0 10px 15px;
+  }
+
+  .price-block__feature-icon {
+    position: relative;
+    display: table-cell;
+    border: 1px solid #e5e5e5;
+
+    &--yes::before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 31px;
+      height: 21px;
+      top: 10px;
+      left: 62px;
+      background: url('../img/icon-yes.svg') no-repeat;
+    }
+
+    &--no::before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 27px;
+      height: 26px;
+      top: 10px;
+      left: 62px;
+      background: url('../img/icon-no.svg') no-repeat;
+    }
+  }
+
+  .price-block__slider {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .price-block {
+    width: 940px;
+    padding: 0 130px;
+  }
+
+  .price-block__table-header-block {
+    width: 235px;
+  }
 }

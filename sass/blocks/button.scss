@@ -9,8 +9,34 @@
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
+  outline: none;
 
   &--green {
     background-color: #2aab6d;
+
+    &:hover {
+      background: #1c9b5e;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:disabled {
+      background: #e5e5e5;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .button--popup {
+    width: 299px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .button--success {
+    width: 460px;
   }
 }

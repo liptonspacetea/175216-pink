@@ -1,3 +1,7 @@
+.photo-block {
+  width: 320px;
+}
+
 .photo-block__title {
   margin: 0;
   padding: 60px 40px 55px 40px;
@@ -44,5 +48,31 @@
 .photo-block__like-btn {
   margin-left: 18px;
   margin-top: 17px;
+}
+
+@media (min-width: 700px) {
+  .photo-block {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+
+    &--big-photo {
+      display: block;
+      width: 700px;
+    }
+  }
+  .photo-block__photo-content--big-photo {
+    width: 620px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo-block--big-photo {
+    width: 1200px;
+  }
+
+  .photo-block__photo-content--big-photo {
+    width: 940px;
+  }
 
 }
