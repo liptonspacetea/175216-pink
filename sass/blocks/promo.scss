@@ -18,7 +18,8 @@
     background-repeat: no-repeat;
   }
 
-  &--form {
+  &--form,
+  &--photo {
     background-image: url(../img/bg-back-mobile@1x.jpg);
     background-position: center;
     background-size: cover;

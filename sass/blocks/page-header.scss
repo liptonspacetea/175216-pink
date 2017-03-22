@@ -1,3 +1,5 @@
+@import "../global/variables.scss";
+
 .page-header {
   background-color: #283645;
   border-bottom: 1px solid #000000;
@@ -16,7 +18,22 @@
 .page-header__logo {
   padding-top: 22px;
   padding-bottom: 22px;
-  cursor: pointer;
+}
+
+.page-header__tablet-logo {
+  display: none;
+}
+
+.page-header__desktop-logo {
+  display: none;
+}
+
+.page-header__logo-link:hover .page-header__mobile-element {
+  fill: $pink;
+}
+
+.page-header__logo-link:active .page-header__mobile-element {
+  fill: $white-active;
 }
 
 .page-header__menu-btn {
@@ -27,6 +44,32 @@
   .page-header__inner {
     padding: 0 40px;
   }
+
+  .page-header__mobile-logo {
+    display: none;
+  }
+
+  .page-header__tablet-logo {
+    display: inline;
+  }
+
+  .page-header__logo-link:hover .page-header__tablet-element {
+    fill: $pink;
+  }
+
+  .page-header__logo-link:active .page-header__tablet-element {
+    fill: $white-active;
+  }
+
+  .page-header__logo {
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
+
+  .page-header__menu-btn {
+    margin-top: 44px;
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -35,7 +78,7 @@
     display: flex;
     justify-content: space-between;
     width: 1200px;
-    padding: 0 120px;
+    padding: 0 130px;
     box-sizing: border-box;
     top: 0;
     background: rgba(40, 54, 69, 0.7);
@@ -53,6 +96,22 @@
 
   .page-header__logo {
     padding-top: 27px;
+  }
+
+  .page-header__tablet-logo {
+    display: none;
+  }
+
+  .page-header__desktop-logo {
+    display: inline;
+  }
+
+  .page-header__logo-link:hover .page-header__desktop-element {
+    fill: $pink;
+  }
+
+  .page-header__logo-link:active .page-header__desktop-element {
+    fill: $white-active;
   }
 
   .page-header__menu-btn {

@@ -1,6 +1,8 @@
+@import "../global/variables.scss";
+
 .page-footer {
   text-align: center;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
 
   &--index-hide {
@@ -9,10 +11,29 @@
 }
 
 .page-footer__logo {
+  margin-left: auto;
+  margin-right: auto;
   width: 147px;
   height: 40px;
   margin-top: 61px;
 }
+
+.page-footer__desktop-logo {
+  display: none;
+}
+
+.page-footer__logo:hover .page-footer__logo-letter {
+  fill: $pink;
+}
+
+.page-footer__logo:active .page-footer__logo-letter {
+  fill: $bluish-transparent;
+}
+
+.page-footer__logo:active .page-footer__logo-glasses {
+  fill: $pink-transparent;
+}
+
 
 .page-footer__social-block {
   font-size: 0;
@@ -55,6 +76,14 @@
     width: 15px;
     height: 13px;
     background: url('../img/icon-youtube.svg');
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &:hover {
+    border-color: $bluish;
   }
 }
 
@@ -93,7 +122,7 @@
     }
   }
 
-  .page-footer__wrapper {
+  .page-footer__inner {
     display: flex;
     justify-content: space-between;
   }
@@ -104,5 +133,13 @@
     width: 1200px;
     box-sizing: border-box;
     padding: 0 120px;
+  }
+
+  .page-footer__mobile-logo {
+    display: none;
+  }
+
+  .page-footer__desktop-logo {
+    display: inline;
   }
 }
