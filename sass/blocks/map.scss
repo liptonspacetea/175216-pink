@@ -1,6 +1,6 @@
 .map {
   position: relative;
-  width: 100%;
+  min-width: 320px;
   height: 200px;
   overflow: hidden;
   background: #eeeeee url(../img/bg-map-mobile@1x.png) no-repeat center;
@@ -19,6 +19,14 @@
     border-left: 50vw solid transparent;
     z-index: 1;
   }
+}
+
+@media (min-width: 320px) and (min-resolution: 144dpi),
+(min-width: 320px) and (min-resolution: 1.5dppx) {
+  .map {
+    background: url(../img/bg-map-mobile@2x.jpg) no-repeat center;
+    background-size: cover;
+    }
 }
 
 @media (min-width: 700px) {
