@@ -25,7 +25,6 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
-
 }
 
 .promo__pic {
@@ -51,7 +50,34 @@
 }
 
 .promo__app-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 235px;
+  margin: 33px auto 27px;
   padding-top: 32px;
+}
+
+.promo__app-link {
+  text-decoration: none;
+  font-size: 0;
+
+  &--apple {
+    width: 47px;
+    height: 56px;
+    background: url(../img/logo-apple.svg) no-repeat;
+  }
+  &--android {
+    width: 43px;
+    height: 47px;
+    background: url(../img/logo-android.svg) no-repeat center;
+  }
+  &--microsoft {
+    width: 44px;
+    height: 41px;
+    background: url(../img/logo-microsoft.svg) no-repeat center;
+  }
 }
 
 .promo__app-link:nth-child(1),
@@ -71,17 +97,22 @@
 .promo__image-inner {
   padding: 0 47px;
   text-align: center;
+
+  &--no-js {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  &--js {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
 }
 
 .promo__page-title {
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
-
-  &--form {
-    padding-top: 30px;
-    padding-bottom: 50px;
-  }
 }
 
 .promo__decription {
