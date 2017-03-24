@@ -1,26 +1,38 @@
-.like-button {
-  position: relative;
+.like-button__text {
   padding: 0;
-  padding-left: 32px;
+  padding-left: 19px;
   border: none;
   font-size: 12px;
-  line-height: 24px;
+  line-height: 12px;
   color: #d22856;
   text-transform: uppercase;
   cursor: pointer;
+  text-decoration: none;
+}
 
-  &::before {
-    position: absolute;
-    display: block;
-    content: "";
-    width: 13px;
-    height: 12px;
-    background: url('../img/icon-heart.svg');
-    top: 6px;
-    left: 0;
+.like-button__heart {
+  width: 13px;
+  height: 12px;
+  text-decoration: none;
+}
+
+@media (min-width:700px) {
+  .like-button {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    &--panorama {
+      align-items: flex-start;
+    }
   }
 
-  &--photo-page {
-    background-color: #f2f2f2;
+  .like-button__text {
+    padding: 0;
+
+    &--panorama {
+      padding-right: 20px;
+    }
   }
 }
