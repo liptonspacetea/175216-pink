@@ -20,10 +20,8 @@
 
   &--form,
   &--photo {
-    background-image: url(../img/bg-back-mobile@1x.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: #161f28 url(../img/bg-back-mobile@1x.jpg) no-repeat center/cover;
+    min-height: 170px;
   }
 }
 
@@ -131,10 +129,20 @@
     background-image: url(../img/iphone-6_copy.png), url(../img/bg-back-mobile@1x.jpg);
   }
 
+  .promo__image--photo {
+    min-height: 326px;
+  }
+
   .promo__inner {
     padding: 0 40px;
     position: absolute;
     top: 105px;
+  }
+
+  .promo__image-inner {
+    &--no-js {
+      padding-top: 0;
+    }
   }
 
   .promo__text {
@@ -143,7 +151,7 @@
   }
 
   .promo__page-title {
-    padding-top: 80px;
+    padding-top: 67px;
     font-size: 50px;
     line-height: 60px;
   }
@@ -151,8 +159,7 @@
 
 @media (min-width: 1200px) {
   .promo__page-title {
-    padding-top: 190px;
-    padding-bottom: 105px;
+    padding: 172px 150px 102px;
   }
 
   .promo__image-inner {

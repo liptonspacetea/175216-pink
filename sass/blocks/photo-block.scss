@@ -1,4 +1,5 @@
 .photo-block {
+  padding-top: 45px;
   background: #ffffff;
 }
 
@@ -8,9 +9,7 @@
 }
 
 .photo-block__title {
-  margin: 0;
-  padding-top: 60px;
-  margin-bottom: 55px;
+  margin: 0 0 49px;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
@@ -60,7 +59,7 @@
 }
 
 .photo-block__box-wrapper {
-  padding: 25px 30px 26px 18px;
+  padding: 18px 10px 22px 18px;
 }
 
 .photo-block__photo-unit {
@@ -81,13 +80,16 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
+  text-transform: none;
+  margin-right: 4px;
 }
 
-.photo-block__name-desctiption {
+.photo-block__name-description {
   margin: 0;
   font-size: 12px;
   line-height: 24px;
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 .photo-block__photo-description {
@@ -97,10 +99,20 @@
 }
 
 .photo-block__like-btn {
-  margin-top: 17px;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width: 700px) {
+  .photo-block {
+    padding-top: 92px;
+  }
+
+  .photo-block__title-inner {
+    padding: 0 80px;
+  }
+
   .photo-block__content-inner {
     padding: 0 40px;
     display: flex;
@@ -118,11 +130,25 @@
     margin: 0 auto;
   }
 
+  .photo-block__title {
+    font-size: 18px;
+    margin-bottom: 76px;
+  }
+
   .photo-block__photo-unit {
     width: 300px;
 
     &--panorama {
       width: 100%;
+    }
+  }
+
+  .photo-block__panorama {
+    margin-bottom: 50px;
+
+    .photo-block__box-wrapper {
+      min-height: 99px;
+      padding-bottom: 0;
     }
   }
 
@@ -132,7 +158,7 @@
   }
 
   .photo-block__box-wrapper {
-    padding: 26px 40px 26px 28px;
+    padding: 22px 32px 28px 28px;
     min-height: 104px;
     display: flex;
     flex-direction: column;
@@ -149,16 +175,34 @@
 
     &--panorama {
       position: absolute;
-      top: 30px;
-      right: 25px;
+      top: 26px;
+      right: 30px;
       flex-grow: 0;
     }
   }
 }
 
 @media (min-width: 1200px) {
+  .photo-block__panorama {
+    .photo-block__content-box {
+      min-height: 0;
+    }
+
+    .photo-block__box-wrapper {
+      min-height: 74px;
+    }
+  }
+
   .photo-block__box {
     max-width: 1200px;
+  }
+
+  .photo-block__title-inner {
+    padding: 0 300px;
+  }
+
+  .photo-block__title {
+    margin-bottom: 88px;
   }
 
   .photo-block__content-inner {

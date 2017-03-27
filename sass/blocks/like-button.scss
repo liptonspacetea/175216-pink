@@ -11,8 +11,7 @@
 }
 
 .like-button__heart {
-  width: 13px;
-  height: 12px;
+  display: block;
   text-decoration: none;
 }
 
@@ -32,7 +31,8 @@
     padding: 0;
 
     &--panorama {
-      padding-right: 20px;
+      padding-right: 17px;
+      padding-top: 4px;
     }
   }
 }

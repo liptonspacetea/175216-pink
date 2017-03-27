@@ -4,8 +4,33 @@
     <meta charset="utf-8">
     <title>Pink</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url('img/pink-photo-mobile.jpg');
+      }
+      /* Планшет */
+      @media ( min-width: 700px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url('img/pink-photo-tablet.jpg');
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1200px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url('img/pink-photo-desktop.jpg');
+        }
+      }
+    </style>
+    <link href="node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -117,7 +142,7 @@
           <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link">Фотографии</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">Html Academy</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
         </ul>
       </nav>
     </header>
@@ -150,7 +175,7 @@
             <div class="photo-block__content-box photo-block__content-box--panorama">
               <div class="photo-block__box-wrapper photo-block__box-wrapper--panorama">
                 <div class="photo-block__content">
-                  <p class="photo-block__name-desctiption"><span class="photo-block__name">Анна</span>(5 минут назад)</p>
+                  <p class="photo-block__name-description"><span class="photo-block__name">Анна</span>(5 минут назад)</p>
                   <p class="photo-block__photo-description">Прыгать или нет? Напишите в комментарии свой совет и смотрите пряму трансляцию в перископе, задавайте свои вопросы!</p>
                 </div>
 
@@ -181,7 +206,7 @@
               <div class="photo-block__content-box">
                 <div class="photo-block__box-wrapper">
                   <div class="photo-block__content">
-                    <p class="photo-block__name-desctiption"><span class="photo-block__name">Левон</span>(5 часов назад)</p>
+                    <p class="photo-block__name-description"><span class="photo-block__name">Левон</span>(5 часов назад)</p>
                     <p class="photo-block__photo-description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                   </div>
 
@@ -207,7 +232,7 @@
               <div class="photo-block__content-box">
                 <div class="photo-block__box-wrapper">
                   <div class="photo-block__content">
-                    <p class="photo-block__name-desctiption"><span class="photo-block__name">Антон</span>(12 часов назад)</p>
+                    <p class="photo-block__name-description"><span class="photo-block__name">Антон</span>(12 часов назад)</p>
                     <p class="photo-block__photo-description">Соседи будут рады!</p>
                   </div>
 
@@ -233,7 +258,7 @@
               <div class="photo-block__content-box">
                 <div class="photo-block__box-wrapper">
                   <div class="photo-block__content">
-                    <p class="photo-block__name-desctiption"><span class="photo-block__name">Борис</span>(20 часов назад)</p>
+                    <p class="photo-block__name-description"><span class="photo-block__name">Борис</span>(20 часов назад)</p>
                     <p class="photo-block__photo-description">Здесь могла быть ваша цитата о высоком и вечном.</p>
                   </div>
 
@@ -259,7 +284,7 @@
               <div class="photo-block__content-box">
                 <div class="photo-block__box-wrapper">
                   <div class="photo-block__content">
-                    <p class="photo-block__name-desctiption"><span class="photo-block__name">Сергей</span>(25 часов назад)</p>
+                    <p class="photo-block__name-description"><span class="photo-block__name">Сергей</span>(25 часов назад)</p>
                     <p class="photo-block__photo-description">Самая кубанская в мире!</p>
                   </div>
 
@@ -285,7 +310,7 @@
               <div class="photo-block__content-box">
                 <div class="photo-block__box-wrapper">
                   <div class="photo-block__content">
-                    <p class="photo-block__name-desctiption"><span class="photo-block__name">Максим</span>(40 часов назад)</p>
+                    <p class="photo-block__name-description"><span class="photo-block__name">Максим</span>(40 часов назад)</p>
                     <p class="photo-block__photo-description">Где снег то?</p>
                   </div>
 
@@ -311,7 +336,7 @@
               <div class="photo-block__content-box">
                 <div class="photo-block__box-wrapper">
                   <div class="photo-block__content">
-                    <p class="photo-block__name-desctiption"><span class="photo-block__name">Надежда</span>(45 часов назад)</p>
+                    <p class="photo-block__name-description"><span class="photo-block__name">Надежда</span>(45 часов назад)</p>
                     <p class="photo-block__photo-description">Всем GM и взаимные лайки!</p>
                   </div>
 

@@ -7,7 +7,7 @@
 }
 
 .upload-block__title-inner {
-  padding: 31px 20px;
+  padding: 24px 20px 42px;
 }
 
 .upload-block__title-info {
@@ -183,7 +183,8 @@
   }
 
   .upload-block__title-inner {
-    padding: 57px 40px;
+    padding: 47px;
+    margin-bottom: 22px;
   }
 
   .upload-block__title-info {
@@ -222,6 +223,7 @@
     display: flex;
     flex-direction: column;
     padding: 0;
+    border-bottom-color: transparent;
   }
 
   .upload-block__controller {
@@ -230,14 +232,29 @@
     display: flex;
     justify-content: space-between;
     min-height: 31px;
-    padding: 24px;
     border-bottom: 1px solid #dddfe0;
+
+    &--crop {
+      padding-top: 9px;
+      padding-bottom: 15px;
+    }
+
+    &--fill {
+      padding-top: 24px;
+      padding-bottom: 17px;
+    }
+
+    &--contrast {
+      padding-top: 23px;
+      padding-bottom: 15px;
+    }
   }
 
   .upload-block__controller-btn {
 
     &--crop {
       height: 22px;
+      width: 28px;
     }
 
     &--fill {
@@ -246,14 +263,19 @@
 
     &--contrast {
       height: 21px;
+      width: 31px;
     }
+  }
+
+  .upload-block__button-block {
+    margin-right: 13px;
   }
 
   .upload-block__scale {
     display: block;
     width: 202px;
+    margin-right: 18px;
     margin-top: 10px;
-    margin-left: 20px;
 
     &--active {
       position: static;
@@ -262,7 +284,8 @@
 
   .upload-block__scale-round {
     &--crop {
-      top: 28px;
+      top: 12px;
+      left: 201px;
     }
   }
 
@@ -280,7 +303,7 @@
     }
 
     &--contrast {
-      width: 21px;
+      width: 16px;
       height: 21px;
     }
   }
@@ -311,7 +334,7 @@
   }
 
   .upload-block__title-inner {
-    padding: 52.5px 130px;
+    padding: 5px 5px 44px;
   }
 
   .upload-block__inner {
@@ -330,7 +353,11 @@
   .upload-block__controller {
     width: 410px;
     min-height: 44px;
-    padding: 14px 0;
+    padding: 13px 0;
+
+    &:first-child {
+      padding-top: 0;
+    }
   }
 
   .upload-block__button-block {
@@ -361,6 +388,32 @@
   .upload-block__scale {
     width: 288px;
     margin-top: 20px;
+    margin-right: 30px;
+  }
+
+  .upload-block__controller-btn {
+    &--contrast {
+      width: 43px;
+      margin-top: 5px;
+    }
+
+    &--fill {
+      margin-top: 3px;
+    }
+  }
+
+  .upload-block__scale-round {
+    &--crop {
+      left: 163px;
+    }
+
+    &--fill {
+      left: 247px;
+    }
+
+    &--contrast {
+      left: 160px;
+    }
   }
 
   .upload-block__button-block {
@@ -377,8 +430,8 @@
     }
 
     &--cancel {
-      padding-left: 51px;
-      padding-right: 51px;
+      padding-left: 55px;
+      padding-right: 55px;
     }
   }
 }
