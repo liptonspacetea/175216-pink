@@ -9,9 +9,9 @@
     <base href="https://htmlacademy-adaptive.github.io/175216-pink/6/">
 </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--no-js">
       <div class="page-header__inner">
-        <div class="page-header__navigation">
+        <div class="page-header__navigation page-header__navigation--no-js">
           <div class="page-header__logo">
             <a class="page-header__logo-link" href="index.html">
               <svg class="page-header__mobile-logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
@@ -64,7 +64,6 @@
               </svg>
             </a>
           </div>
-
           <div class="page-header__menu-btn burger">
             <span class="burger__line burger__line--top"></span>
             <span class="burger__line burger__line--middle"></span>
@@ -85,7 +84,10 @@
 
     <main>
       <section class="promo">
-        <div class="promo__image promo__image--index"></div>
+        <div class="promo__image promo__image--index">
+          <div class="promo__image-inner promo__image-inner--no-js promo__image-inner--js">
+          </div>
+        </div>
 
         <div class="promo__inner">
           <div class="promo__aplication">
@@ -94,9 +96,9 @@
             <a class="promo__download download-link" href="#">Скачать приложение</a>
 
             <div class="promo__app-links">
-              <a class="promo__app-link" href="#"><img src="img/logo-apple.svg" alt="iOS App"></a>
-              <a class="promo__app-link" href="#"><img src="img/logo-android.svg" alt="Android App"></a>
-              <a class="promo__app-link" href="#"><img src="img/logo-microsoft.svg" alt="Windows App"></a>
+              <a class="promo__app-link promo__app-link--apple" href="#"></a>
+              <a class="promo__app-link promo__app-link--android" href="#"></a>
+              <a class="promo__app-link promo__app-link--microsoft" href="#"></a>
             </div>
 
             <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windowds 8</p>
