@@ -1,8 +1,5 @@
 .text-form-block {
   margin-bottom: 25px;
-
-  &--form {
-  }
 }
 
 .text-form-block__label {
@@ -11,14 +8,10 @@
   line-height: 30px;
   text-transform: uppercase;
   color: #d22856;
-
-  &--name-field {
-    display: block;
-  }
 }
 
 .text-form-block__input {
-  width: 280px;
+  width: 100%;
   box-sizing: border-box;
   padding: 16px 0 16px 20px;
   border: 2px solid #e5e5e5;
@@ -37,23 +30,31 @@
 }
 
 @media (min-width: 700px) {
+  .text-form-block {
+    display: flex;
+    align-items: center;
+
+    &--contact {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+  }
+
   .text-form-block__label {
-    display: inline-block;
+    margin: 0;
+    margin-right: 21px;
+
+    &--contact {
+      margin-left: 19px;
+      margin-right: 0;
+    }
   }
 
   .text-form-block__input {
-    width: 400px;
+    flex-grow: 1;
   }
 }
 
 @media (min-width: 1200px) {
-  .text-form-block__input {
-    width: 250px;
-  }
-
-  .text-form-block--contact {
-    width: 375px;
-    display: flex;
-    flex-direction: column-reverse;
-  }
 }
