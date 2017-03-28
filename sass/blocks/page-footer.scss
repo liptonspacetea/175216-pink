@@ -61,7 +61,7 @@
 
 .page-footer__development-block {
   width: 128px;
-  margin: 39px auto;
+  margin: 37px auto;
 }
 
 .page-footer__development-link {
@@ -114,6 +114,7 @@
   .page-footer__social-block {
     margin: auto;
     margin-top: 39px;
+    padding-right: 17px;
   }
 
   .page-footer__development-block {
@@ -142,13 +143,32 @@
   .page-footer__logo {
     margin-top: 98px;
     margin-bottom: 87px;
+
+    &--form {
+      margin-top: 69px;
+    }
   }
 
   .page-footer__social-block {
     margin-top: 102px;
+
+    &--form {
+      margin-top: 75px;
+      padding-right: 0;
+      padding-left: 12px;
+    }
   }
 
   .page-footer__development-block {
+    width: 152px;
     margin-top: 113px;
+
+    &--form {
+      margin-top: 82px;
+    }
+  }
+
+  .page-footer__link-text {
+    font-size: 18px;
   }
 }

@@ -1,11 +1,11 @@
 .text-form-block {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .text-form-block__label {
   margin-left: 23px;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 40px;
   text-transform: uppercase;
   color: #d22856;
 }
@@ -13,7 +13,7 @@
 .text-form-block__input {
   width: 100%;
   box-sizing: border-box;
-  padding: 16px 0 16px 20px;
+  padding: 14.5px 0 14.5px 22px;
   border: 2px solid #e5e5e5;
   font-size: 18px;
   line-height: 30px;
@@ -33,17 +33,55 @@
   .text-form-block {
     display: flex;
     align-items: center;
+    margin-bottom: 53px;
 
     &--contact {
+      position: relative;
       display: flex;
       flex-direction: column-reverse;
       align-items: flex-start;
+      margin-bottom: 25px;
+
+
+      &:before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 60px;
+        height: 58.818px;
+        background-color: #e5e5e5;
+        top: 1.455px;
+        right: 1.455px;
+      }
+    }
+
+    &--mail::after {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 20px;
+      height: 19px;
+      top: 28px;
+      right: 21px;
+      background: url('../img/icon-mail.svg') no-repeat;
+    }
+
+    &--phone::after {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 20px;
+      height: 19px;
+      top: 22px;
+      right: 21px;
+      background: url('../img/icon-phone.svg') no-repeat;
     }
   }
 
   .text-form-block__label {
     margin: 0;
     margin-right: 21px;
+    line-height: 47px;
 
     &--contact {
       margin-left: 19px;
@@ -53,8 +91,19 @@
 
   .text-form-block__input {
     flex-grow: 1;
+    padding-left: 20px;
+
+    &--contact {
+      padding-right: 60px;
+    }
   }
 }
 
 @media (min-width: 1200px) {
+  .text-form-block {
+    &--contact {
+      width: 375px;
+      margin-bottom: 7px;
+    }
+  }
 }

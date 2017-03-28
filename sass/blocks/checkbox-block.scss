@@ -46,3 +46,19 @@
     background: url('../img/icon-yes.svg');
   }
 }
+
+@media (min-width: 700px) {
+  .checkbox-block__label {
+    padding-left: 60px;
+  }
+
+  .checkbox-block {
+    margin-bottom: 44px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .checkbox-block {
+    width: 208px;
+  }
+}

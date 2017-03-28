@@ -129,8 +129,8 @@
     <main>
       <section class="promo">
         <div class="promo__image promo__image--form">
-          <div class="promo__image-inner">
-            <p class="promo__page-title">Конкурс на самое безбашенное путешествие с Пинк</p>
+          <div class="promo__image-inner promo__image-inner--form">
+            <p class="promo__page-title promo__page-title--form">Конкурс на самое безбашенное путешествие с Пинк</p>
           </div>
         </div>
       </section>
@@ -138,7 +138,7 @@
       <section class="page-decription">
         <div class="page-decription__inner">
           <p class="page-decription__text">Поделитесь своей историей и получите
-          шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+          шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!
           <span class="page-decription__extra-text">Пожалуйста заполните форму ниже:</span>
           </p>
         </div>
@@ -152,12 +152,12 @@
             <div class="request-form__name-inner">
               <div class="text-form-block">
                 <label class="text-form-block__label" for="surname">Фамилия</label>
-                <input class="text-form-block__input" id="surname" type="text" placeholder="Укажите фамилию*">
+                <input class="text-form-block__input" id="surname" type="text" placeholder="Укажите фамилию *">
               </div>
 
               <div class="text-form-block">
                 <label class="text-form-block__label" for="name">Имя</label>
-                <input class="text-form-block__input" id="name" type="text" placeholder="Введите ваше имя*">
+                <input class="text-form-block__input" id="name" type="text" placeholder="Введите ваше имя *">
               </div>
 
               <div class="text-form-block">
@@ -205,20 +205,20 @@
           <div class="request-form__contacts">
             <h2 class="request-form__text request-form__text--contacts">Контактная информация</h2>
             <div class="request-form__contacts-inner">
-              <div class="text-form-block text-form-block--contact">
+              <div class="text-form-block text-form-block--contact text-form-block--phone">
                 <label class="text-form-block__label text-form-block__label--contact" for="phone">Номер телефона</label>
-                <input class="text-form-block__input" id="phone" type="text" placeholder="Номер, пожалуйста">
+                <input class="text-form-block__input text-form-block__input--contact" id="phone" type="text" placeholder="Номер, пожалуйста">
               </div>
 
-              <div class="text-form-block text-form-block--contact">
+              <div class="text-form-block text-form-block--contact text-form-block--mail">
                 <label class="text-form-block__label text-form-block__label--contact" for="mail">Адрес почты</label>
-                <input class="text-form-block__input" id="mail" type="text" placeholder="Введите почту*">
+                <input class="text-form-block__input text-form-block__input--contact" id="mail" type="text" placeholder="Введите почту*">
               </div>
             </div>
           </div>
 
           <div class="request-form__applications">
-            <h2 class="request-form__text request-form__text--apps">С каким приложение путешествовали?</h2>
+            <h2 class="request-form__text request-form__text--apps">С каким приложением путешествовали?</h2>
             <div class="request-form__applications-inner">
               <div class="radio-button-block request-form__application-checkbox">
                 <input class="radio-button-block__input" id="ios" name="app" type="checkbox" checked>
@@ -246,8 +246,9 @@
 
           <div class="request-form__button-block">
             <div class="request-form__button-block-inner">
-              <button class="request-form__btn button button--green" type="button">Отправить форму</button>
-              <p class="request-form__required"><span class="request-form__star-icon">*</span> &mdash; Обязательные поля</p>
+              <button class="request-form__btn button button--green button--big" type="button">Отправить форму</button>
+              <p class="request-form__required"><span class="request-form__star-icon">*</span>
+                &mdash; Обязательные<span class="request-form__extra"> для заполнения</span> поля</p>
             </div>
           </div>
         </div>
@@ -278,7 +279,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__inner">
-        <div class="page-footer__logo">
+        <div class="page-footer__logo page-footer__logo--form">
           <a class="page-footer__logo-link" href="index.html">
             <svg class="page-footer__mobile-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
               <g>
@@ -322,7 +323,7 @@
           </a>
         </div>
 
-        <div class="page-footer__social-block">
+        <div class="page-footer__social-block page-footer__social-block--form">
           <a class="page-footer__social-link" href="#" target="_blank">
             <svg width="17" height="14">
               <use xlink:href="#icon-twitter"></use>
@@ -340,7 +341,7 @@
           </a>
         </div>
 
-        <div class="page-footer__development-block">
+        <div class="page-footer__development-block page-footer__development-block--form">
           <a class="page-footer__development-link" href="#" target="_blank">
             <span class="page-footer__link-text">Разработано</span>
             <svg class="page-footer__academy-link" width="29" height="35">
