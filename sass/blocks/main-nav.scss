@@ -17,11 +17,10 @@
 }
 
 .main-nav__item {
-  padding: 0;
+  padding: 15.5px 0;
   text-align: center;
   border-bottom: 1px solid #000000;
   border-top: 1px solid #485461;
-  padding: 15px 0;
 }
 
 .main-nav__link {
@@ -62,10 +61,11 @@
   }
 
   .main-nav__link {
-    padding: 51px 0;
+    padding: 46px 0;
     line-height: 18px;
     font-weight: 300;
     background: none;
+    text-transform: none;
   }
 
 }

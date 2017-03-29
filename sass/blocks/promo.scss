@@ -8,8 +8,6 @@
 }
 
 .promo__image {
-
-
   &--index {
     min-height: 396px;
     background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
@@ -18,13 +16,11 @@
     background-repeat: no-repeat;
   }
 
+  &--photo,
   &--form {
-    background-image: url(../img/bg-back-mobile@1x.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: #161f28 url(../img/bg-back-mobile@1x.jpg) no-repeat center/cover;
+    min-height: 170px;
   }
-
 }
 
 .promo__pic {
@@ -50,7 +46,34 @@
 }
 
 .promo__app-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 235px;
+  margin: 33px auto 27px;
   padding-top: 32px;
+}
+
+.promo__app-link {
+  text-decoration: none;
+  font-size: 0;
+
+  &--apple {
+    width: 47px;
+    height: 56px;
+    background: url(../img/logo-apple.svg) no-repeat;
+  }
+  &--android {
+    width: 43px;
+    height: 47px;
+    background: url(../img/logo-android.svg) no-repeat center;
+  }
+  &--microsoft {
+    width: 44px;
+    height: 41px;
+    background: url(../img/logo-microsoft.svg) no-repeat center;
+  }
 }
 
 .promo__app-link:nth-child(1),
@@ -68,37 +91,23 @@
 }
 
 .promo__image-inner {
-  padding: 0 47px;
+  padding: 0 45px;
   text-align: center;
+
+  &--no-js {
+    padding-top: 26px;
+  }
+
+  &--js {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
 }
 
 .promo__page-title {
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
-
-  &--form {
-    padding-top: 30px;
-    padding-bottom: 50px;
-  }
-}
-
-.promo__decription {
-  background: #ffffff;
-  text-align: center;
-}
-
-.promo__decription-inner {
-  padding: 0 20px;
-}
-
-.page-header__description-text {
-  margin: 0;
-  padding-top: 48px;
-  padding-bottom: 32px;
-  font-size: 14px;
-  line-height: 30px;
-  color: #283645;
 }
 
 @media (min-width: 700px) {
@@ -117,10 +126,20 @@
     background-image: url(../img/iphone-6_copy.png), url(../img/bg-back-mobile@1x.jpg);
   }
 
+  .promo__image--photo {
+    min-height: 326px;
+  }
+
   .promo__inner {
     padding: 0 40px;
     position: absolute;
     top: 105px;
+  }
+
+  .promo__image-inner {
+    &--no-js {
+      padding-top: 0;
+    }
   }
 
   .promo__text {
@@ -129,14 +148,21 @@
   }
 
   .promo__page-title {
+    padding-top: 63px;
     font-size: 50px;
     line-height: 60px;
+    margin-bottom: 77px;
   }
 }
 
 @media (min-width: 1200px) {
   .promo__page-title {
-    padding-top: 140px;
+    padding: 172px 150px 102px;
+    margin: 0;
+
+    &--form {
+      padding: 172px 35px 102px;
+    }
   }
 
   .promo__image-inner {

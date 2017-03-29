@@ -6,37 +6,40 @@ body {
   padding: 0;
 }
 
-fieldset {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
 img {
   width: 100%;
   height: auto;
+  vertical-align: bottom;
 }
 
-.container {
-  width: 320px;
-  text-align: center;
-  margin: 0 auto;
+::-webkit-input-placeholder {
+  color: #283645;
+  font-family: "Open Sans", "Tahoma", sans-serif;
 }
 
-@media (min-width: 700px) {
-  .container {
-    width: 700px;
-  }
-
-  fieldset {
-    border: 2px solid #e5e5e5;
-  }
+::-moz-placeholder {
+  color: #283645;
+  font-family: "Open Sans", "Tahoma", sans-serif;
 }
 
-@media (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
+:-moz-placeholder {
+  color: #283645;
+  font-family: "Open Sans", "Tahoma", sans-serif;
+}
 
+:-ms-input-placeholder {
+  color: #283645;
+  font-family: "Open Sans", "Tahoma", sans-serif;
+}
 
+textarea:-moz-placeholder {
+  color: #283645;
+  font-family: "Open Sans", "Tahoma", sans-serif;
+}
+
+textarea::-webkit-input-placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  font-family: "Open Sans", "Tahoma", sans-serif;
 }

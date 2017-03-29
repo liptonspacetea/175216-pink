@@ -1,12 +1,46 @@
+.request-form__inner {
+}
 
-.request-form__contact-inner {
+.request-form__name {
+  background: #ffffff;
+  margin-bottom: 10px;
+}
+
+.request-form__name-inner,
+.request-form__achievments-inner,
+.request-form__contacts-inner,
+.request-form__applications-inner,
+.request-form__comments-inner,
+.request-form__button-block-inner {
   padding: 0 20px;
 }
 
-.request-form__achievments-block {
-  background-color: #f2f2f2;
-  text-align: center;
+.request-form__name-inner {
+  padding-bottom: 17px;
+}
 
+.request-form__achievments-inner {
+  padding-bottom: 1px;
+}
+
+.request-form__achievments {
+  background: #f2f2f2;
+  margin-bottom: 26px;
+}
+
+.request-form__contacts {
+  background: #ffffff;
+  margin-bottom: 41px;
+}
+
+.request-form__applications {
+  background: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.request-form__comments {
+  background: #ffffff;
+  margin-bottom: 48px;
 }
 
 .request-form__text {
@@ -15,113 +49,328 @@
   line-height: 18px;
   color: #d22856;
   text-transform: uppercase;
+  text-align: center;
+
+  &--achievs {
+    padding: 40px 28px;
+  }
 
   &--contacts {
     display: none;
   }
+
+  &--apps {
+    padding: 39px 28px 36px;
+  }
+
+  &--coments {
+    padding: 38px 28px 16px;
+  }
 }
 
-.request-form__contact-block {
-  padding-bottom: 17px;
-}
-
-.request-form__application-checkbox {
-  margin-left: 20px;
-}
 .request-form__comment-text {
-  margin-left: 20px;
+  resize: none;
+  width: 100%;
+  min-height: 201px;
+  padding: 17px 20px 0 20px;
+  box-sizing: border-box;
+  border: 2px solid #e5e5e5;
+  outline: none;
+}
+
+.request-form__button-block {
+  margin-bottom: 55px;
 }
 
 .request-form__btn {
-  margin-left: 20px;
-  margin-top: 48px;
+  margin-bottom: 34px;
 }
 
+.request-form__required {
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-transform: uppercase;
+}
+
+.request-form__star-icon {
+  color: #d22856;
+}
+
+.request-form__extra {
+  display: none;
+}
+
+
 @media (min-width: 700px) {
-  .request-form {
-    display: flex;
-    flex-direction: column;
-    width: 620px;
+  .request-form__inner {
+    padding: 0 40px;
   }
 
-  .request-form__name-block {
+  .request-form__name-inner,
+  .request-form__achievments-inner,
+  .request-form__contacts-inner,
+  .request-form__applications-inner,
+  .request-form__comments-inner,
+  .request-form__button-block-inner {
+    padding: 0;
+  }
+
+  .request-form__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .request-form__name {
     order: -1;
   }
 
-  .request-form__application-block {
+  .request-form__applications {
     order: 0;
   }
 
-  .request-form__contact-block {
+  .request-form__contacts {
     order: 1;
   }
 
-  .request-form__achievments-block {
+  .request-form__achievments {
     order: 2;
   }
 
-  .request-form__comment-block {
+  .request-form__comments {
     order: 3;
   }
 
   .request-form__button-block {
     order: 4;
-    font-size: 0;
   }
 
-  .request-form__btn,
-  .request-form__required-text {
-    display: inline-block;
-    vertical-align: top;
-    font-size: 14px;
+  .request-form__name {
+    margin-bottom: 13px;
   }
 
-  .request-form__required-text {
+  .request-form__applications {
+    position: relative;
+    border: 2px solid #e5e5e5;
+    background: #ffffff;
+    margin-bottom: 64px;
+    padding-bottom: 16px;
+  }
+
+  .request-form__applications-inner {
+    padding-left: 58px;
+    padding-top: 52px;
+  }
+
+  .request-form__contacts {
+    position: relative;
+    border: 2px solid #e5e5e5;
+    margin-bottom: 64px;
+  }
+
+  .request-form__contacts-inner {
+    padding-top: 46px;
+    padding-left: 58px;
+    padding-right: 58px;
+  }
+
+  .request-form__achievments {
+    position: relative;
+    border: 2px solid #e5e5e5;
+    background: #ffffff;
+    margin-bottom: 69px;
+  }
+
+  .request-form__achievments-inner {
+    padding-top: 52px;
+    padding-left: 58px;
+  }
+
+  .request-form__comments {
+    position: relative;
+    border: 2px solid #e5e5e5;
+    background: #ffffff;
+    margin-bottom: 68px;
+  }
+
+  .request-form__comments-inner {
+    padding: 47px 58px ;
+  }
+
+  .request-form__comment-text {
+    min-height: 193px;
+  }
+
+  .request-form__text {
+    position: absolute;
+    text-align: center;
+    background: #ffffff;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-weight: 300;
+
+    &--apps {
+      top: -49px;
+      width: 312px;
+    }
+
+    &--contacts {
+      display: block;
+      padding: 0;
+      width: 260px;
+      top: -10px;
+    }
+
+    &--achievs {
+      width: 480px;
+      top: -49px;
+    }
+
+    &--coments {
+      width: 260px;
+      top: -50px;
+    }
+  }
+
+  .request-form__button-block {
+    margin-bottom: 50px;
+  }
+
+  .request-form__button-block-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .request-form__btn {
     margin: 0;
-    padding: 70px 0 0 40px;
-  }
-
-  .request-form__text--contacts {
-    display: block;
   }
 
 }
 
 @media (min-width: 1200px) {
   .request-form {
-    width: 940px;
+    width: 1200px;
+    box-sizing: border-box;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .request-form__name-block {
-    width: 470px
+  .request-form__text {
+    &--apps {
+      width: 310px;
+    }
+
+    &--achievs {
+      width: 381px;
+      top: -50px;
+    }
+
+    &--coments {
+      width: 204px;
+      top: -47px;
+    }
   }
 
-  .request-form__contact-block {
-    margin-top: 50px;
+  .request-form__inner {
+    padding: 0 130px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .request-form__name {
+    width: 435px;
+    margin-bottom: 13px;
+  }
+
+  .request-form__name-inner {
+    padding: 0;
+    padding-top: 9px;
+  }
+
+  .request-form__applications {
+    width: 431px;
+  }
+
+  .request-form__applications-inner {
+    padding-left: 75px;
+    padding-top: 56px;
+  }
+
+  .request-form__contacts {
     width: 940px;
+    margin-bottom: 65px;
   }
 
-  .request-form__contacts-wrapper {
+  .request-form__contacts-inner {
     display: flex;
     justify-content: space-between;
+    padding-top: 44px;
   }
 
-  .request-form__achievments-block {
+  .request-form__achievments {
     width: 940px;
+    margin-bottom: 65px;
   }
 
-  .request-form__achievments-block {
-    width: 940px;
+  .request-form__achievments-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 52px 50px 0 58px;
+    margin-bottom: 11px;
   }
 
-  .request-form__comment-block {
+  .checkbox-block:nth-child(1) {
+    order: -1;
+  }
+
+  .checkbox-block:nth-child(3) {
+    order: 0;
+  }
+
+  .checkbox-block:nth-child(5) {
+    order: 1;
+  }
+
+  .checkbox-block:nth-child(2) {
+    order: 2;
+  }
+
+  .checkbox-block:nth-child(4) {
+    order: 3;
+  }
+
+  .checkbox-block:nth-child(6) {
+    order: 4;
+  }
+
+  .request-form__comments {
     width: 940px;
+    margin-bottom: 65px;
+  }
+
+  .request-form__comments-inner {
+    padding: 43px 58px 41px;
+  }
+
+  .request-form__comment-text {
+    min-height: 128px;
   }
 
   .request-form__button-block {
-    display: flex;
-    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  .request-form__button-block-inner {
+    width: 940px;
+  }
+
+  .request-form__extra {
+    display: inline;
   }
 }

@@ -5,7 +5,6 @@
 
 .checkbox-block__label {
   position: relative;
-  margin-left: 20px;
   padding-left: 70px;
   font-size: 18px;
   line-height: 39px;
@@ -45,5 +44,21 @@
     top: 2px;
     left: 9px;
     background: url('../img/icon-yes.svg');
+  }
+}
+
+@media (min-width: 700px) {
+  .checkbox-block__label {
+    padding-left: 60px;
+  }
+
+  .checkbox-block {
+    margin-bottom: 44px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .checkbox-block {
+    width: 208px;
   }
 }

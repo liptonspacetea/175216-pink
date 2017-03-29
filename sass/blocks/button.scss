@@ -29,8 +29,14 @@
 }
 
 @media (min-width: 700px) {
-  .button--popup {
-    width: 299px;
+  .button {
+    &--popup {
+      width: 299px;
+    }
+
+    &--big {
+      width: 298px;
+    }
   }
 
 }
