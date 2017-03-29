@@ -1,5 +1,5 @@
 .text-form-block {
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .text-form-block__label {
@@ -13,7 +13,7 @@
 .text-form-block__input {
   width: 100%;
   box-sizing: border-box;
-  padding: 14.5px 0 14.5px 22px;
+  padding: 15.5px 0 13.5px 19px;
   border: 2px solid #e5e5e5;
   font-size: 18px;
   line-height: 30px;
@@ -40,7 +40,7 @@
       display: flex;
       flex-direction: column-reverse;
       align-items: flex-start;
-      margin-bottom: 25px;
+      margin-bottom: 22px;
 
 
       &::before {

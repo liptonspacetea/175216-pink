@@ -20,9 +20,12 @@
 }
 
 @media (min-width: 700px) {
+  .page-decription {
+    margin-bottom: 74px;
+  }
+
   .page-decription__inner {
     padding: 95px 100px 0;
-    margin-bottom: 69px;
   }
 
   .page-decription__text {
@@ -36,7 +39,7 @@
 
 @media (min-width: 1200px) {
   .page-decription__inner {
-    padding: 95px 220px 13px 220px;
-    margin-bottom: 63px;
+    padding: 95px 220px 0 220px;
+
   }
 }
