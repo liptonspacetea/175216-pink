@@ -1,16 +1,28 @@
+@import "../global/variables.scss";
 
 .review-block {
-  margin-top: 45px;
+  background-color: #ffffff;
+  margin-bottom: 78px;
+}
+
+.review-block__inner {
+  padding: 0 20px;
   text-align: center;
+  margin-bottom: 36px;
 }
 
 .review-block__item {
-  padding: 0 20px;
-  background-color: #ffffff;
+
+  &--rev2,
+  &--rev3 {
+    display: none;
+  }
 }
 
 .review-block__title {
   margin: 0;
+  padding-top: 7px;
+  padding-bottom: 13px;
   font-size: 18px;
   line-height: 30px;
 }
@@ -19,12 +31,14 @@
   margin: 0;
   font-size: 14px;
   line-height: 30px;
-  padding-top: 27px;
-  padding-bottom: 40px;
 }
 
 .review-block__description {
   display: none;
+}
+
+.review-block__slider {
+  text-align: center;
 }
 
 @media (min-width: 700px) {

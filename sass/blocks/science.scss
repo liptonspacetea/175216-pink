@@ -1,0 +1,64 @@
+@import "../global/variables.scss";
+
+.science {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .science {
+    display: block;
+  }
+
+  .science__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .science__clock {
+    width: 238px;
+    height: 276px;
+    background: url('../img/icon-timer.svg') no-repeat left center;
+    background-size: 238px 276px;
+  }
+
+/*
+
+    &:after {
+      content: '24';
+      position: absolute;
+      font-size: 96px;
+      font-weight: @bold;
+      line-height: 1.656em;
+      color: @red;
+      top: 130px;
+      left: 66px;
+    }
+  }
+  */
+
+  .science__content-block {
+    width: 310px;
+    text-align: left;
+  }
+
+  .science__title {
+    color: #ffffff;
+    font-size: 30px;
+  }
+
+  .science__text {
+    margin-bottom: 19px;
+  }
+
+  .research__link {
+    color: $pink;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .research {
+    background: #f2f2f2;
+  }
+}

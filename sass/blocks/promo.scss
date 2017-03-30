@@ -3,15 +3,11 @@
   background: #1d2631;
 }
 
-.promo__inner {
-  padding: 0 20px;
-}
-
 .promo__image {
   &--index {
-    min-height: 396px;
+    min-height: 393px;
     background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
-    background-position: center bottom, center;
+    background-position: left bottom, center;
     background-size: auto, cover;
     background-repeat: no-repeat;
   }
@@ -23,10 +19,6 @@
   }
 }
 
-.promo__pic {
-  vertical-align:bottom
-}
-
 .promo__page-title {
   margin: 0;
   color: #ffffff;
@@ -34,60 +26,6 @@
 
 .promo__aplication {
   text-align: center;
-}
-
-.promo__title {
-  display: none;
-}
-
-.promo__download {
-  display: inline-block;
-  margin-top: 28px;
-}
-
-.promo__app-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 235px;
-  margin: 33px auto 27px;
-  padding-top: 32px;
-}
-
-.promo__app-link {
-  text-decoration: none;
-  font-size: 0;
-
-  &--apple {
-    width: 47px;
-    height: 56px;
-    background: url(../img/logo-apple.svg) no-repeat;
-  }
-  &--android {
-    width: 43px;
-    height: 47px;
-    background: url(../img/logo-android.svg) no-repeat center;
-  }
-  &--microsoft {
-    width: 44px;
-    height: 41px;
-    background: url(../img/logo-microsoft.svg) no-repeat center;
-  }
-}
-
-.promo__app-link:nth-child(1),
-.promo__app-link:nth-child(2) {
-  margin-right: 33px;
-}
-
-.promo__text {
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  color: #ffffff;
-  padding-bottom: 31px;
-  padding-top: 26px;
 }
 
 .promo__image-inner {
@@ -111,16 +49,6 @@
 }
 
 @media (min-width: 700px) {
-  .promo__title {
-    display: block;
-    width: 190px;
-    margin: 0 auto;
-    font-size: 40px;
-    line-height: 40px;
-    font-weight: 300;
-    color: #ffffff;
-  }
-
   .promo__image--index {
     min-height: 618px;
     background-image: url(../img/iphone-6_copy.png), url(../img/bg-back-mobile@1x.jpg);
@@ -130,21 +58,10 @@
     min-height: 326px;
   }
 
-  .promo__inner {
-    padding: 0 40px;
-    position: absolute;
-    top: 105px;
-  }
-
   .promo__image-inner {
     &--no-js {
       padding-top: 0;
     }
-  }
-
-  .promo__text {
-    width: 300px;
-    font-weight: 300;
   }
 
   .promo__page-title {
