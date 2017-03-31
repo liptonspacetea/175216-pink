@@ -31,6 +31,7 @@
   margin: 0;
   font-size: 14px;
   line-height: 30px;
+  color: $bluish;
 }
 
 .review-block__description {
@@ -43,15 +44,31 @@
 
 @media (min-width: 700px) {
   .review-block {
-    width: 700px;
-    padding: 45px 40px 0 40px;
-    box-sizing: border-box;
-    margin: 0 auto;
+    margin-bottom: 99px;
+  }
+
+  .review-block__inner {
+    padding: 0 40px;
+  }
+
+  .review-block__text {
+    font-size: 18px;
+  }
+
+  .review-block__title {
+    padding: 36px 0 0 0;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .review-block__item {
     display: flex;
     flex-direction: column;
+
+    &--rev2,
+    &--rev3 {
+      display: none;
+    }
   }
 
   .review-block__description {

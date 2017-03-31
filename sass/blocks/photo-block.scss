@@ -133,6 +133,7 @@
   .photo-block__title {
     font-size: 18px;
     margin-bottom: 76px;
+    padding-top: 78px;
   }
 
   .photo-block__photo-unit {
@@ -202,6 +203,7 @@
   }
 
   .photo-block__title {
+    padding-top: 80px;
     margin-bottom: 88px;
   }
 
@@ -218,7 +220,7 @@
     margin-bottom: 54px;
   }
 
-  .photo-block__photo-unit:nth-child(3n) {
+  .photo-block__photo-unit {
     margin-right: 0;
   }
 

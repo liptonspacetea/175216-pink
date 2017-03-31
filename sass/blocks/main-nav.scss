@@ -1,3 +1,5 @@
+@import "../global/variables.scss";
+
 .main-nav--close {
   display: none;
 }
@@ -35,7 +37,7 @@
   line-height: 32px;
 
   &:hover {
-    color: #d22856;
+    color: $pink;
   }
 
   &:active {
@@ -57,15 +59,35 @@
   .main-nav__item {
     border: none;
     padding: 0;
-
   }
 
   .main-nav__link {
+    position: relative;
     padding: 46px 0;
     line-height: 18px;
     font-weight: 300;
     background: none;
     text-transform: none;
-  }
 
+    &--active {
+
+      &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: #ffffff;
+        top: 70px;
+      }
+
+      &:hover {
+        color: $pink;
+
+        &::before {
+          background: $pink;
+        }
+      }
+    }
+  }
 }
