@@ -5,32 +5,6 @@
     <title>Pink</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
-
-    <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
-        /* По умолчанию показывается мобильный макет */
-        background-image: url('img/pink-photo-mobile.jpg');
-      }
-      /* Планшет */
-      @media ( min-width: 700px ) {
-        HTML {
-          /* Планшетный макет */
-          background-image: url('img/pink-photo-tablet.jpg');
-        }
-      }
-      /* Десктоп */
-      @media ( min-width: 1200px ) {
-        HTML {
-          /* Десктопный макет */
-          background-image: url('img/pink-photo-desktop.jpg');
-        }
-      }
-    </style>
-    <link href="node_modules/pixel-glass/styles.css" rel="stylesheet">
-    <script src="node_modules/pixel-glass/script.js"></script>
-    <!-- // Pixel Glass -->
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -140,7 +114,7 @@
       <nav class="main-nav main-nav--close main-nav--no-js">
         <ul class="main-nav__items">
           <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Фотографии</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
         </ul>
@@ -151,7 +125,7 @@
       <section class="promo">
         <div class="promo__image promo__image--photo">
           <div class="promo__image-inner promo__image-inner--no-js promo__image-inner--js">
-            <p class="promo__page-title">Фотографии пользователей</p>
+            <p class="promo__page-title promo__page-title--photo">Фотографии пользователей</p>
           </div>
         </div>
       </section>
@@ -163,11 +137,13 @@
 
         <div class="photo-block__panorama">
           <div class="photo-block__panorama-photo">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-              <source media="(min-width: 700px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-              <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Photo">
-            </picture>
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 700px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Photo">
+              </picture>
+            </a>
             <div class="photo-block__label">Панорама дня</div>
           </div>
 
@@ -196,11 +172,13 @@
           <div class="photo-block__content-inner">
             <div class="photo-block__photo-unit">
               <div class="photo-block__photo-item">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
-                  <source media="(min-width: 700px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-                  <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Photo">
-                </picture>
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 700px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                    <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Photo">
+                  </picture>
+                </a>
               </div>
 
               <div class="photo-block__content-box">
@@ -223,11 +201,13 @@
             </div>
 
             <div class="photo-block__photo-unit">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
-                <source media="(min-width: 700px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-                <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Photo">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 700px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                  <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Photo">
+                </picture>
+              </a>
 
               <div class="photo-block__content-box">
                 <div class="photo-block__box-wrapper">
@@ -249,11 +229,13 @@
             </div>
 
             <div class="photo-block__photo-unit">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
-                <source media="(min-width: 700px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-                <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Photo">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 700px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                  <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Photo">
+                </picture>
+              </a>
 
               <div class="photo-block__content-box">
                 <div class="photo-block__box-wrapper">
@@ -275,11 +257,14 @@
             </div>
 
             <div class="photo-block__photo-unit">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
-                <source media="(min-width: 700px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
-                <img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Photo">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 700px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                  <img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Photo">
+                </picture>
+              </a>
+
 
               <div class="photo-block__content-box">
                 <div class="photo-block__box-wrapper">
@@ -301,11 +286,13 @@
             </div>
 
             <div class="photo-block__photo-unit">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
-                <source media="(min-width: 700px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
-                <img src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Photo">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+                  <source media="(min-width: 700px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+                  <img src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Photo">
+                </picture>
+              </a>
 
               <div class="photo-block__content-box">
                 <div class="photo-block__box-wrapper">
@@ -327,11 +314,13 @@
             </div>
 
             <div class="photo-block__photo-unit">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
-                <source media="(min-width: 700px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
-                <img src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Photo">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+                  <source media="(min-width: 700px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+                  <img src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Photo">
+                </picture>
+              </a>
 
               <div class="photo-block__content-box">
                 <div class="photo-block__box-wrapper">

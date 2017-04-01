@@ -1,17 +1,18 @@
 .slider {
-  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 59px;
+  margin: 0 auto;
 }
 
 .slider__control {
-  display: inline-block;
-  margin-right: 10px;
-  vertical-align: middle;
-  font-size: 14px;
   width: 6px;
   height: 6px;
   background-color: #bec2c7;
   border: 1px solid #ffffff;
   border-radius: 50%;
+  cursor: pointer;
 
   &--active-slide {
     background-color: #ffffff;

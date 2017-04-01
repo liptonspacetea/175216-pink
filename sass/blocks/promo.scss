@@ -3,15 +3,11 @@
   background: #1d2631;
 }
 
-.promo__inner {
-  padding: 0 20px;
-}
-
 .promo__image {
   &--index {
-    min-height: 396px;
+    min-height: 393px;
     background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
-    background-position: center bottom, center;
+    background-position: left bottom, center;
     background-size: auto, cover;
     background-repeat: no-repeat;
   }
@@ -23,10 +19,6 @@
   }
 }
 
-.promo__pic {
-  vertical-align:bottom
-}
-
 .promo__page-title {
   margin: 0;
   color: #ffffff;
@@ -36,66 +28,13 @@
   text-align: center;
 }
 
-.promo__title {
-  display: none;
-}
-
-.promo__download {
-  display: inline-block;
-  margin-top: 28px;
-}
-
-.promo__app-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 235px;
-  margin: 33px auto 27px;
-  padding-top: 32px;
-}
-
-.promo__app-link {
-  text-decoration: none;
-  font-size: 0;
-
-  &--apple {
-    width: 47px;
-    height: 56px;
-    background: url(../img/logo-apple.svg) no-repeat;
-  }
-  &--android {
-    width: 43px;
-    height: 47px;
-    background: url(../img/logo-android.svg) no-repeat center;
-  }
-  &--microsoft {
-    width: 44px;
-    height: 41px;
-    background: url(../img/logo-microsoft.svg) no-repeat center;
-  }
-}
-
-.promo__app-link:nth-child(1),
-.promo__app-link:nth-child(2) {
-  margin-right: 33px;
-}
-
-.promo__text {
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  color: #ffffff;
-  padding-bottom: 31px;
-  padding-top: 26px;
-}
-
 .promo__image-inner {
   padding: 0 45px;
   text-align: center;
 
   &--no-js {
     padding-top: 26px;
+
   }
 
   &--js {
@@ -111,29 +50,26 @@
 }
 
 @media (min-width: 700px) {
-  .promo__title {
-    display: block;
-    width: 190px;
-    margin: 0 auto;
-    font-size: 40px;
-    line-height: 40px;
-    font-weight: 300;
-    color: #ffffff;
-  }
+  .promo__image {
 
-  .promo__image--index {
-    min-height: 618px;
-    background-image: url(../img/iphone-6_copy.png), url(../img/bg-back-mobile@1x.jpg);
+    &--index {
+      background-image: url(../img/iphone-6_copy.png), url(../img/bg-back-tablet@1x.jpg);
+      background-position: center bottom, center;
+      background-size: auto, cover;
+      background-repeat: no-repeat;
+
+      &-no-js {
+        min-height: 612px;
+      }
+
+      &-js {
+        min-height: 740px;
+      }
+    }
   }
 
   .promo__image--photo {
     min-height: 326px;
-  }
-
-  .promo__inner {
-    padding: 0 40px;
-    position: absolute;
-    top: 105px;
   }
 
   .promo__image-inner {
@@ -142,20 +78,27 @@
     }
   }
 
-  .promo__text {
-    width: 300px;
-    font-weight: 300;
-  }
-
   .promo__page-title {
     padding-top: 63px;
     font-size: 50px;
     line-height: 60px;
     margin-bottom: 77px;
+
+    &--photo {
+      margin-bottom: 0;
+    }
   }
 }
 
 @media (min-width: 1200px) {
+  .promo__image {
+
+    &--index {
+      min-height: 853px;
+      background-image: url(../img/iphone-hand-desktop@1x.png), url(../img/bg-back-desktop@1x.jpg);
+      background-position: 146px bottom, center;
+    }
+  }
   .promo__page-title {
     padding: 172px 150px 102px;
     margin: 0;
@@ -167,5 +110,49 @@
 
   .promo__image-inner {
     padding: 0 190px;
+  }
+}
+
+/* Ретинизация */
+
+@media (min-width: 320px) and (min-resolution: 144dpi),
+(min-width: 320px) and (min-resolution: 1.5dppx) {
+  .promo__image {
+    &--index {
+      background-image: #161f28 url(../img/iphone-hand-mobile@2x.png), url(../img/bg-back-mobile@2x.jpg);
+    }
+
+    &--photo,
+    &--form {
+      background: #161f28 url(../img/bg-back-mobile@2x.jpg) no-repeat center/cover;
+    }
+  }
+}
+
+@media (min-width: 700px) and (min-resolution: 144dpi),
+(min-width: 700px) and (min-resolution: 1.5dppx) {
+  .promo__image {
+    &--index {
+      background-image: #161f28 url(../img/iphone-hand-tablet@2x.png), url(../img/bg-back-tablet@2x.jpg);
+    }
+
+    &--photo,
+    &--form {
+      background: #161f28 url(../img/bg-back-tablet@2x.jpg) no-repeat center/cover;
+    }
+  }
+}
+
+@media (min-width: 1200px) and (min-resolution: 144dpi),
+(min-width: 1200px) and (min-resolution: 1.5dppx) {
+  .promo__image {
+    &--index {
+      background-image: #161f28 url(../img/iphone-hand-desktop@2x.png), url(../img/bg-back-desktop@2x.jpg);
+    }
+
+    &--photo,
+    &--form {
+      background: #161f28 url(../img/bg-back-desktop@2x.jpg) no-repeat center/cover;
+    }
   }
 }

@@ -5,34 +5,32 @@
     <title>Pink</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
-
-    <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
-        /* По умолчанию показывается мобильный макет */
-        background-image: url('img/pink-index-mobile.jpg');
-      }
-      /* Планшет */
-      @media ( min-width: 700px ) {
-        HTML {
-          /* Планшетный макет */
-          background-image: url('img/pink-index-tablet.jpg');
-        }
-      }
-      /* Десктоп */
-      @media ( min-width: 1200px ) {
-        HTML {
-          /* Десктопный макет */
-          background-image: url('img/pink-index-desktop.jpg');
-        }
-      }
-    </style>
-    <link href="node_modules/pixel-glass/styles.css" rel="stylesheet">
-    <script src="node_modules/pixel-glass/script.js"></script>
-    <!-- // Pixel Glass -->
   </head>
   <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <!-- иконки соц сетей -->
+      <symbol id="icon-twitter" viewBox="0 0 17.5 14.663">
+        <path fill="#d22856" fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
+      </symbol>
+
+      <symbol id="icon-youtube" viewBox="0 0 14.64 13.96">
+        <path fill="#d22856" d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
+      </symbol>
+
+      <symbol id="icon-facebook" viewBox="0 0 8.673 18.944">
+        <path fill="#d22856" d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+      </symbol>
+
+      <!-- academy -->
+      <symbol id="academy" viewBox="0 0 26.943 34.09">
+          <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
+      </symbol>
+
+      <symbol id="review-arrow-r" viewBox="0 0 21.706 41.719">
+        <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+      </symbol>
+    </svg>
+
     <header class="page-header page-header--no-js">
       <div class="page-header__inner">
         <div class="page-header__navigation page-header__navigation--no-js">
@@ -98,7 +96,7 @@
 
       <nav class="main-nav main-nav--close main-nav--no-js">
         <ul class="main-nav__items">
-          <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
@@ -107,75 +105,139 @@
     </header>
 
     <main>
-      <section class="promo">
-        <div class="promo__image promo__image--index">
-          <div class="promo__image-inner promo__image-inner--no-js promo__image-inner--js">
+      <div class="index-promo-wrapper">
+        <section class="promo">
+          <div class="promo__image promo__image--index promo__image--index-no-js promo__image--index-js ">
+            <div class="promo__image-inner promo__image-inner--no-js promo__image-inner--js">
+            </div>
           </div>
-        </div>
+        </section>
 
-        <div class="promo__inner">
-          <div class="promo__aplication">
+        <section class="download-block download-block--no-js download-block--js">
+          <div class="download-block__inner">
+            <h2 class="download-block__title">Взгляните<br> на жизнь иначе!</h2>
+            <a class="download-block__link download-link" href="">Скачать приложение</a>
 
-            <h2 class="promo__title">Взгляните на жизнь иначе!</h2>
-            <a class="promo__download download-link" href="#">Скачать приложение</a>
-
-            <div class="promo__app-links">
-              <a class="promo__app-link promo__app-link--apple" href="#"></a>
-              <a class="promo__app-link promo__app-link--android" href="#"></a>
-              <a class="promo__app-link promo__app-link--microsoft" href="#"></a>
+            <div class="download-block__app-links">
+              <a class="download-block__app-link download-block__app-link--apple" href="#"></a>
+              <a class="download-block__app-link download-block__app-link--android" href="#"></a>
+              <a class="download-block__app-link download-block__app-link--microsoft" href="#"></a>
             </div>
 
-            <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windowds 8</p>
+            <p class="download-block__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windowds 8</p>
+          </div>
+        </section>
+      </div>
+
+
+      <section class="information-block">
+        <div class="information-block__inner">
+          <h2 class="information-block__title">Устали от серости мегаполиса?</h2>
+          <h2 class="information-block__title information-block__title--second">Нам есть, что вам предложить!</h2>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="features__inner">
+          <div class="features__item">
+            <div class="features__item-pic">
+              <picture class="features-item__picture features-item__picture--pic1">
+                <source media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
+                <source media="(min-width: 700px)" srcset="img/iphone-screen-1-tablet@1x.png 1x, img/iphone-screen-1-tablet@2x.png 2x">
+                <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Фото приложения">
+              </picture>
+            </div>
+
+            <div class="features__item-description">
+              <h3 class="features__item-title">Поднимает настроение</h3>
+              <p class="features__item-text">Приложение позволит вам победить
+                осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </div>
+          </div>
+
+          <div class="features__item">
+            <div class="features__item-pic">
+              <picture class="features-item__picture features-item__picture--pic2">
+                <source media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
+                <source media="(min-width: 700px)" srcset="img/iphone-screen-2-tablet@1x.png 1x, img/iphone-screen-2-tablet@2x.png 2x">
+                <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Фото приложения">
+              </picture>
+            </div>
+
+            <div class="features__item-description">
+              <h3 class="features__item-title">Меняет мир вокруг</h3>
+              <p class="features__item-text">Сделайте снимок и украсьте
+                его смайликом или текстовой надписью, чтобы усилить эффект</p>
+            </div>
+          </div>
+
+          <div class="features__item features__item--mobile">
+            <div class="features__item-pic features__item-pic--mobile">
+              <picture class="features-item__picture features-item__picture--pic3">
+                <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+                <source media="(min-width: 700px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+                <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Фото приложения">
+              </picture>
+            </div>
+
+            <div class="features__item-description features__item-description--mobile">
+              <h3 class="features__item-title">Заводит новых друзей</h3>
+              <p class="features__item-text">Ставьте лайки, комментируйте,
+                делитесь фотографиями с друзьями и заводите новых</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="information-block">
-        <div class="information-block__inner">
-          <div class="information-block__title-block">
-            <h2 class="information-block__main-title">Устали от серости мегаполиса?</h2>
-            <h2 class="information-block__main-title">Нам есть, что вам предложить!</h2>
-          </div>
-        </div>
+      <section class="science">
+        <div class="science__inner">
+          <div class="science__clock"></div>
 
-        <div class="information-block__feature-inner">
-          <div class="information-block__feature">
-            <div class="information-block__advantages-block">
-              <h3 class="information-block__title">Поднимает настроение</h3>
-              <p class="information-block__text">Приложение позволит вам победить
-                осеннюю хандру и депрессию буквально в несколько кликов</p>
-
-              <h3 class="information-block__title">Меняет мир вокруг</h3>
-              <p class="information-block__text">Сделайте снимок и украсьте
-                его смайликом или текстовой надписью, чтобы усилить эффект</p>
-
-              <h3 class="information-block__title">Заводит новых друзей</h3>
-              <p class="information-block__text">Ставьте лайки, комментируйте,
-                делитесб фотографиями с друзьями и заводите новых</p>
-            </div>
-          </div>
-
-          <div class="information-block_pic-block"></div>
-        </div>
-
-        <div class="information-block__science">
-          <div class="information-block_pic-clock"></div>
-          <div class="information-block_description">
-            <h3 class="information-block__science-title">Эффект на 24 часа</h3>
-            <p class="information-block__science-text">Британские ученые провели исследования и
-              доказали, что положительный эффект от использования приложения
-              длится целые сутки!</p>
-            <a class="information-block__science-link">Узнать больше об исследовании!</a>
+          <div class="science__content-block">
+            <h3 class="science__title">Эффект<br> на 24 часа!</h3>
+            <p class="science__text">Британские ученые провели исследования и доказали, что положительный эффект от
+              использования приложения длится целые сутки!</p>
+            <a href="#" class="science__link">Узнать больше об исследовании</a>
           </div>
         </div>
       </section>
 
       <section class="review-block">
-        <div class="review-block__item">
-          <h3 class="review-block__title">Николай Петров</h3>
-          <p class="review-block__description">25 лет, водитель трамвая</p>
-          <p class="review-block__text">"Это приложение перевернуло мой мир и позволило по новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях в выложенных фотографиях!"</p>
+        <div class="review-block__inner">
+          <div class="review-block__quote"></div>
+
+          <div class="review-block__item review-block__item--rev1">
+            <h3 class="review-block__title">Николай Петров</h3>
+            <p class="review-block__description">25 лет, водитель трамвая</p>
+            <p class="review-block__text">&laquo;Это приложение перевернуло мой мир и позволило по
+              новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в
+              комментариях в выложенных фотографиях!&raquo;</p>
+          </div>
+
+          <div class="review-block__item review-block__item--rev2">
+            <h3 class="review-block__title">Антонов Константин</h3>
+            <p class="review-block__description">25 лет, супер фронтенд разработчик</p>
+            <p class="review-block__text">"Это приложение перевернуло мой мир и позволило по новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях в выложенных фотографиях!"</p>
+          </div>
+
+          <div class="review-block__item review-block__item--rev3">
+            <h3 class="review-block__title">Дональд Трамп</h3>
+            <p class="review-block__description">53 года, президент США</p>
+            <p class="review-block__text">"Крым наш!"</p>
+          </div>
+
+          <div class="review-block__arrow review-block__arrow--r">
+            <svg class="review-block__arrows" width="27" height="44">
+              <use xlink:href="#review-arrow-r"></use>
+            </svg>
+          </div>
+          <div class="review-block__arrow review-block__arrow--l">
+            <svg class="review-block__arrows" width="27" height="44">
+              <use xlink:href="#review-arrow-r"></use>
+            </svg>
+          </div>
         </div>
+
 
         <div class="review-block__slider slider">
           <div class="slider__control slider__control--active-slide"></div>
@@ -184,47 +246,47 @@
         </div>
       </section>
 
-      <section class="price-block">
-        <table class="price-block__table">
-          <tr class="price-block__table-raw">
-            <td class="price-block__table-header-block price-block__table-header-block--none"></td>
-            <td class="price-block__table-header-block price-block__table-header-block--base">
-              <h3 class="price-block__type">База</h3>
-              <p class="price-block__price">1,99 USD</p>
-            </td>
-            <td class="price-block__table-header-block price-block__table-header-block--popular">
-              <h3 class="price-block__type">Стандарт</h3>
-              <p class="price-block__price">4,99 USD</p>
-            </td>
-            <td class="price-block__table-header-block price-block__table-header-block--unlimit">
-              <h3 class="price-block__type">Анлим</h3>
-              <p class="price-block__price">9,99 USD</p>
-            </td>
-          </tr>
+      <section class="price-table">
+        <div class="price-table__inner">
+          <div class="price-table__block">
+            <div class="price-table__column-group">
+              <div class="price-table__column"></div>
+              <div class="price-table__column"></div>
+              <div class="price-table__column"></div>
+              <div class="price-table__column"></div>
+            </div>
+            <div class="price-table__header">
+              <ul class="price-table__header-row">
+                <li class="price-table__header-cell"></li>
+                <li class="price-table__header-cell">База <span class="price-table__price">1,99 USD</span></li>
+                <li class="price-table__header-cell price-table__header-cell--hit">Стандарт <span class="price-table__price">3,99 USD</span></li>
+                <li class="price-table__header-cell">Анлим <span class="price-table__price">9,99 USD</span></li>
+              </ul>
+            </div>
+            <div class="price-table__content">
+              <ul class="price-table__content-row">
+                <li class="price-table__content-cell">Розовый фильтр</li>
+                <li class="price-table__content-cell price-table__content-cell--yes">Розовый фильтр</li>
+                <li class="price-table__content-cell price-table__content-cell--yes">Розовый фильтр</li>
+                <li class="price-table__content-cell price-table__content-cell--yes">Розовый фильтр</li>
+              </ul>
+              <ul class="price-table__content-row">
+                <li class="price-table__content-cell">Смайлики</li>
+                <li class="price-table__content-cell price-table__content-cell--no">Смайлики</li>
+                <li class="price-table__content-cell price-table__content-cell--yes">Смайлики</li>
+                <li class="price-table__content-cell price-table__content-cell--yes">Смайлики</li>
+              </ul>
+              <ul class="price-table__content-row">
+                <li class="price-table__content-cell">Комментарии</li>
+                <li class="price-table__content-cell price-table__content-cell--no">Комментарии</li>
+                <li class="price-table__content-cell price-table__content-cell--no">Комментарии</li>
+                <li class="price-table__content-cell price-table__content-cell--yes">Комментарии</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-          <tr class="price-block__table-raw">
-            <td class="price-block__feature">Розовый фильтр</td>
-            <td class="price-block__feature-icon price-block__feature-icon--yes"></td>
-            <td class="price-block__feature-icon price-block__feature-icon--yes"></td>
-            <td class="price-block__feature-icon price-block__feature-icon--yes"></td>
-          </tr>
-
-          <tr class="price-block__table-raw">
-            <td class="price-block__feature">Смайлики</td>
-            <td class="price-block__feature-icon price-block__feature-icon--no"></td>
-            <td class="price-block__feature-icon price-block__feature-icon--yes"></td>
-            <td class="price-block__feature-icon price-block__feature-icon--yes"></td>
-          </tr>
-
-          <tr class="price-block__table-raw">
-            <td class="price-block__feature">Комментарии</td>
-            <td class="price-block__feature-icon price-block__feature-icon--no"></td>
-            <td class="price-block__feature-icon price-block__feature-icon--no"></td>
-            <td class="price-block__feature-icon price-block__feature-icon--yes"></td>
-          </tr>
-        </table>
-
-        <div class="price-block__slider slider">
+        <div class="price-table__slider slider">
           <div class="slider__control"></div>
           <div class="slider__control slider__control--active-slide"></div>
           <div class="slider__control"></div>
@@ -232,20 +294,19 @@
       </section>
 
       <section class="contact-block">
+        <h2 class="contact-block__main-title">Остались вопросы?<br>Свяжитесь с нами!</h2>
         <div class="contact-block__inner">
-          <h2 class="contact-block__main-title">Остались вопросы? Свяжитесь с нами</h2>
-
-          <div class="contact-block__section">
+          <div class="contact-block__section contact-block__section--phone">
             <h3 class="contact-block__contact-title">Звоните:</h3>
             <a class="contact-block__link" href="#">+7 (812) 555-66-66</a>
           </div>
 
-          <div class="contact-block__section">
+          <div class="contact-block__section contact-block__section--mail">
             <h3 class="contact-block__contact-title">Пишите:</h3>
-            <a class="contact-block__link" href="#">mail@htmlacademy.ru</a>
+            <a class="contact-block__link contact-block__link--mail" href="#">mail@htmlacademy.ru</a>
           </div>
 
-          <div class="contact-block__section">
+          <div class="contact-block__section contact-block__section--adress">
             <h3 class="contact-block__contact-title">Приезжайте в гости:</h3>
             <p class="contact-block__text">ул.Большая<br> Конюшенная, 19/8</p>
           </div>
@@ -257,7 +318,7 @@
 
     <footer class="page-footer page-footer--index-hide">
       <div class="page-footer__inner">
-        <div class="page-footer__logo">
+        <div class="page-footer__logo page-footer__logo--index">
           <a class="page-footer__logo-link" href="index.html">
             <svg class="page-footer__mobile-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
               <g>
@@ -301,7 +362,7 @@
           </a>
         </div>
 
-        <div class="page-footer__social-block">
+        <div class="page-footer__social-block page-footer__social-block--index">
           <a class="page-footer__social-link" href="#" target="_blank">
             <svg width="17" height="14">
               <use xlink:href="#icon-twitter"></use>
@@ -319,7 +380,7 @@
           </a>
         </div>
 
-        <div class="page-footer__development-block">
+        <div class="page-footer__development-block page-footer__development-block--index">
           <a class="page-footer__development-link" href="#" target="_blank">
             <span class="page-footer__link-text">Разработано</span>
             <svg class="page-footer__academy-link" width="29" height="35">
@@ -331,7 +392,7 @@
     </footer>
 
     <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/main-index.js" type="text/javascript"></script>
     <script src="js/map.js" type="text/javascript"></script>
 
   </body>

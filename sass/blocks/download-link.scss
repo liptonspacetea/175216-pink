@@ -1,10 +1,39 @@
+@import "../global/variables.scss";
+
 .download-link {
+  padding: 15.5px 36px;
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-weight: bold;
   color: #ffffff;
   font-size: 18px;
   line-height: 18px;
   text-decoration: none;
   border: 3px solid #ffffff;
   border-radius: 35px;
-  padding: 15.5px 35px;
-  font-family: "Open Sans", "Tahoma", sans-serif;
+
+  &:hover {
+    background: #ffffff;
+    color: $pink;
+  }
+
+  &:active {
+    color: $pink-transparent;
+  }
+}
+
+@media (min-width: 700px) {
+  .download-link {
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-bottom: 47px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .download-link {
+    font-weight: bold;
+    font-size: 21px;
+    padding: 15.5px 27px;
+    margin-bottom: 69px;
+  }
 }

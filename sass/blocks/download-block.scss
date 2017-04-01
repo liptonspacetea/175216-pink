@@ -1,0 +1,122 @@
+@import "../global/variables.scss";
+
+.download-block {
+  background: $bluish;
+}
+
+.download-block__inner {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.download-block__title {
+  display: none;
+}
+
+.download-block__link {
+  display: inline-block;
+  margin-top: 28px;
+  margin-bottom: 36px;
+}
+
+.download-block__app-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 205px;
+  margin: 0 auto 19px auto;
+}
+
+.download-block__app-link {
+  text-decoration: none;
+  font-size: 0;
+
+  &--apple {
+    width: 47px;
+    height: 56px;
+    background: url(../img/logo-apple.svg) no-repeat;
+  }
+  &--android {
+    width: 43px;
+    height: 47px;
+    background: url(../img/logo-android.svg) no-repeat center;
+  }
+  &--microsoft {
+    width: 44px;
+    height: 41px;
+    background: url(../img/logo-microsoft.svg) no-repeat center;
+  }
+}
+
+.download-block__text {
+  margin: 0;
+  padding-bottom: 29px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+@media (min-width: 700px) {
+  .download-block {
+    position: absolute;
+    width: 340px;
+    background: transparent;
+
+    &--no-js {
+      top: 88px;
+    }
+
+    &--js {
+      top: 210px;
+    }
+  }
+
+  .download-block__inner {
+    padding: 0 0 0 40px;
+  }
+
+  .download-block__title {
+    display: block;
+    margin: 0 auto 35px;
+    font-size: 40px;
+    line-height: 47px;
+    font-weight: 300;
+    color: #ffffff;
+  }
+
+  .download-block__link {
+    margin: 0;
+  }
+
+  .download-block__app-links {
+    margin-bottom: 36px;
+  }
+
+  .download-block__text {
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 1200px) {
+  .download-block {
+    top: 222px;
+  }
+
+  .download-block__inner {
+    width: 299px;
+    padding: 0 0 0 130px;
+  }
+
+  .download-block__title {
+    margin: 0 auto 58px;
+    font-size: 50px;
+    line-height: 57px;
+    font-weight: 300;
+  }
+
+  .download-block__app-links {
+    margin-bottom: 55px;
+  }
+}

@@ -1,16 +1,28 @@
+@import "../global/variables.scss";
 
 .review-block {
-  margin-top: 45px;
+  background-color: #ffffff;
+  margin-bottom: 78px;
+}
+
+.review-block__inner {
+  padding: 0 20px;
   text-align: center;
+  margin-bottom: 36px;
 }
 
 .review-block__item {
-  padding: 0 20px;
-  background-color: #ffffff;
+
+  &--rev2,
+  &--rev3 {
+    display: none;
+  }
 }
 
 .review-block__title {
   margin: 0;
+  padding-top: 7px;
+  padding-bottom: 13px;
   font-size: 18px;
   line-height: 30px;
 }
@@ -19,25 +31,48 @@
   margin: 0;
   font-size: 14px;
   line-height: 30px;
-  padding-top: 27px;
-  padding-bottom: 40px;
+  color: $bluish;
 }
 
 .review-block__description {
   display: none;
 }
 
+.review-block__slider {
+  text-align: center;
+}
+
+.review-block__arrow {
+  display: none;
+}
+
 @media (min-width: 700px) {
   .review-block {
-    width: 700px;
-    padding: 45px 40px 0 40px;
-    box-sizing: border-box;
-    margin: 0 auto;
+    margin-bottom: 99px;
+  }
+
+  .review-block__inner {
+    padding: 0 40px;
+  }
+
+  .review-block__text {
+    font-size: 18px;
+  }
+
+  .review-block__title {
+    padding: 36px 0 0 0;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .review-block__item {
     display: flex;
     flex-direction: column;
+
+    &--rev2,
+    &--rev3 {
+      display: none;
+    }
   }
 
   .review-block__description {
@@ -50,6 +85,69 @@
   .review-block__text {
     order: -1;
   }
+}
 
+@media (min-width: 1200px) {
+  .review-block {
+    margin-bottom: 130px;
+  }
 
+  .review-block__inner {
+    position: relative;
+    padding: 0 130px;
+  }
+
+  .review-block__arrow {
+    position: absolute;
+    display: block;
+    top: 137px;;
+
+    &--r {
+      right: 127px;
+    }
+
+    &--l {
+      left: 127px;
+      transform: rotate(180deg);
+    }
+  }
+
+  .review-block__arrows {
+    fill: #bec2c7;
+
+    &:hover {
+      fill: #7e868f;
+    }
+
+    &:active {
+      fill: rgba(190, 194, 199, 0.1);
+    }
+  }
+
+  .review-block__quote {
+    width: 78px;
+    height: 63px;
+    margin: 0 auto 52px auto;
+    background: url('../img/icon-quotes.svg') no-repeat;
+    background-size: 78px 63px;
+  }
+
+  .review-block__text {
+    width: 690px;
+    margin: 0 auto;
+  }
+
+  .review-block__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .review-block__description {
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  .review-block__slider {
+    display: none;
+  }
 }
