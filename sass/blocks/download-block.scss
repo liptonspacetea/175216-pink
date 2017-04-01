@@ -98,3 +98,25 @@
     font-weight: 300;
   }
 }
+
+@media (min-width: 1200px) {
+  .download-block {
+    top: 222px;
+  }
+
+  .download-block__inner {
+    width: 299px;
+    padding: 0 0 0 130px;
+  }
+
+  .download-block__title {
+    margin: 0 auto 58px;
+    font-size: 50px;
+    line-height: 57px;
+    font-weight: 300;
+  }
+
+  .download-block__app-links {
+    margin-bottom: 55px;
+  }
+}

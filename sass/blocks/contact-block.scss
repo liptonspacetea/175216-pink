@@ -80,7 +80,39 @@
 }
 
 @media (min-width: 1200px) {
-  .contact-block {
-    max-width: 1200px;
+  .contact-block__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 130px;
+  }
+
+  .contact-block__section {
+    &--phone {
+      order: -1;
+    }
+
+    &--adress {
+      order: 0;
+    }
+
+    &--mail {
+      order: 1;
+    }
+  }
+
+  .contact-block__main-title {
+    padding-top: 69px;
+    margin-bottom: 60px;
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 300;
+  }
+
+  .contact-block__contact-title {
+    padding-bottom: 23px;
+  }
+
+  .contact-block__text {
+    margin-bottom: 18px;
   }
 }

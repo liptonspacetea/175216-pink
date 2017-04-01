@@ -17,13 +17,22 @@
     z-index: -1;
 
     @media (min-width: 700px) {
-      transform: skewY(-4.5deg);
+      transform: skewY(-4deg);
+    }
+
+    @media (min-width: 1200px) {
+      transform: skewY(-5deg);
     }
   }
 
   @media (min-width: 700px) {
     padding-top: 11px;
     padding-bottom: 72px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 57px;
+    padding-bottom: 99px;
   }
 }
 
@@ -71,6 +80,10 @@
       display: table-cell;
       background-color: #ffffff;
       border: none;
+    }
+
+    @media (min-width: 700px) {
+      background: #f2f2f2;;
     }
   }
 }

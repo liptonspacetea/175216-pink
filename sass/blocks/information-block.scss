@@ -48,3 +48,24 @@
     padding: 53px 0 0 0;
   }
 }
+
+@media (min-width: 1200px) {
+
+  .information-block {
+    margin-bottom: 175px;
+  }
+
+  .information-block__inner {
+    padding: 70px 0 0 0;
+  }
+
+  .information-block__title {
+    font-size: 50px;
+    line-height: 53px;
+    padding-bottom: 10px;
+
+    &--second {
+      width: 500px;
+    }
+  }
+}

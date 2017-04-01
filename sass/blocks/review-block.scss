@@ -81,6 +81,37 @@
   .review-block__text {
     order: -1;
   }
+}
 
+@media (min-width: 1200px) {
+  .review-block {
+    margin-bottom: 130px;
+  }
 
+  .review-block__quote {
+    width: 78px;
+    height: 63px;
+    margin: 0 auto 52px auto;
+    background: url('../img/icon-quotes.svg') no-repeat;
+    background-size: 78px 63px;
+  }
+
+  .review-block__text {
+    width: 690px;
+    margin: 0 auto;
+  }
+
+  .review-block__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .review-block__description {
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  .review-block__slider {
+    display: none;
+  }
 }

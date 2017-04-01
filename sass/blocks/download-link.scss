@@ -23,8 +23,17 @@
 
 @media (min-width: 700px) {
   .download-link {
-    padding-left: 46px;
-    padding-right: 46px;
+    padding-left: 45px;
+    padding-right: 45px;
     margin-bottom: 47px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .download-link {
+    font-weight: bold;
+    font-size: 21px;
+    padding: 15.5px 27px;
+    margin-bottom: 69px;
   }
 }
