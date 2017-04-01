@@ -90,7 +90,7 @@ gulp.task("build", function(fn) {
 });
 
 gulp.task("serve", function() {
-    server.init({
+  server.init({
       server: "build/",
       notify: false,
       open: true,
@@ -98,6 +98,6 @@ gulp.task("serve", function() {
       ui: false
    });
 
-   gulp.watch("sass/**/*.scss", ["style"]);
-   gulp.watch("*.html", ["html:update"]);
- });
+  gulp.watch("sass/**/*.scss", ["style"]);
+  gulp.watch("*.html", ["html:update"]);
+});
