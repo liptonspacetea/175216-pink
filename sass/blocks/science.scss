@@ -48,6 +48,10 @@
     font-size: 14px;
     line-height: 24px;
     color: $pink;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
