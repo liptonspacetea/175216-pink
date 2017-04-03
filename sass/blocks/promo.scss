@@ -51,9 +51,8 @@
 
 @media (min-width: 700px) {
   .promo__image {
-
     &--index {
-      background-image: url(../img/iphone-6_copy.png), url(../img/bg-back-tablet@1x.jpg);
+      background-image: url(../img/iphone-hand-tablet@1x.png), url(../img/bg-back-tablet@1x.jpg);
       background-position: center bottom, center;
       background-size: auto, cover;
       background-repeat: no-repeat;
@@ -65,6 +64,11 @@
       &-js {
         min-height: 740px;
       }
+    }
+
+    &--photo,
+    &--form {
+      background: url(../img/bg-back-tablet@1x.jpg) no-repeat center/cover;
     }
   }
 
@@ -98,6 +102,11 @@
       background-image: url(../img/iphone-hand-desktop@1x.png), url(../img/bg-back-desktop@1x.jpg);
       background-position: 146px bottom, center;
     }
+
+    &--photo,
+    &--form {
+      background: url(../img/bg-back-desktop@1x.jpg) no-repeat center/cover;
+    }
   }
   .promo__page-title {
     padding: 172px 150px 102px;
@@ -119,12 +128,15 @@
 (min-width: 320px) and (min-resolution: 1.5dppx) {
   .promo__image {
     &--index {
-      background-image: #161f28 url(../img/iphone-hand-mobile@2x.png), url(../img/bg-back-mobile@2x.jpg);
+      background: url(../img/iphone-hand-mobile@2x.png), url(../img/bg-back-mobile@2x.jpg);
+      background-position: left bottom, center;
+      background-size: 234px, cover;
+      background-repeat: no-repeat;
     }
 
     &--photo,
     &--form {
-      background: #161f28 url(../img/bg-back-mobile@2x.jpg) no-repeat center/cover;
+      background: url(../img/bg-back-mobile@2x.jpg) no-repeat center/cover;
     }
   }
 }
@@ -133,7 +145,10 @@
 (min-width: 700px) and (min-resolution: 1.5dppx) {
   .promo__image {
     &--index {
-      background-image: #161f28 url(../img/iphone-hand-tablet@2x.png), url(../img/bg-back-tablet@2x.jpg);
+      background-image: url(../img/iphone-hand-tablet@2x.png), url(../img/bg-back-tablet@2x.jpg);
+      background-position: left bottom, center;
+      background-size: 700px, cover;
+      background-repeat: no-repeat;
     }
 
     &--photo,
@@ -147,7 +162,10 @@
 (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .promo__image {
     &--index {
-      background-image: #161f28 url(../img/iphone-hand-desktop@2x.png), url(../img/bg-back-desktop@2x.jpg);
+      background-image: url(../img/iphone-hand-desktop@2x.png), url(../img/bg-back-desktop@2x.jpg);
+      background-position: 146px bottom, center;
+      background-size: 1050px, cover;
+      background-repeat: no-repeat;
     }
 
     &--photo,

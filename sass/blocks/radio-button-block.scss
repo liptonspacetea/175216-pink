@@ -1,3 +1,5 @@
+@import "../global/variables.scss";
+
 .radio-button-block {
   margin-bottom: 38px;
 
@@ -8,11 +10,15 @@
   padding-left: 70px;
   font-size: 18px;
   line-height: 39px;
-  color: #283645;
+  color: $bluish;
   cursor: pointer;
 
   &:hover::before {
-    border-color: #283645;
+    border-color: $bluish;
+  }
+
+  &:active::before {
+    border-color: $pink;
   }
 
   &::before {
@@ -33,7 +39,15 @@
   display: none;
 
   &:checked + .radio-button-block__label::before {
-    border-color: #d22856;
+    border-color: #e5e5e5;
+  }
+
+  &:checked:hover + .radio-button-block__label::before {
+    border-color: $bluish;
+  }
+
+  &:checked:active + .radio-button-block__label::before {
+    border-color: $pink;
   }
 
   &:checked + .radio-button-block__label::after {
