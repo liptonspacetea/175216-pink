@@ -94,7 +94,21 @@
 
   .review-block__inner {
     position: relative;
-    padding: 0 130px;
+    padding: 115px 130px 0 130px;
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 78px;
+      height: 63px;
+      background: url('../img/icon-quotes.svg') no-repeat;
+      background-size: 78px 63px;
+    }
   }
 
   .review-block__arrow {
@@ -122,14 +136,6 @@
     &:active {
       fill: rgba(190, 194, 199, 0.1);
     }
-  }
-
-  .review-block__quote {
-    width: 78px;
-    height: 63px;
-    margin: 0 auto 52px auto;
-    background: url('../img/icon-quotes.svg') no-repeat;
-    background-size: 78px 63px;
   }
 
   .review-block__text {

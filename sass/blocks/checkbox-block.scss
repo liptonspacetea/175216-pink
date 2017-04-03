@@ -1,3 +1,5 @@
+@import "../global/variables.scss";
+
 .checkbox-block {
   text-align: left;
   margin-bottom: 43px;
@@ -12,7 +14,11 @@
   cursor: pointer;
 
   &:hover::before {
-    border-color: #283645;
+    border-color: $bluish;
+  }
+
+  &:active::before {
+    border-color: $pink;
   }
 
   &::before {
@@ -32,7 +38,15 @@
   display: none;
 
   &:checked + .checkbox-block__label::before {
-    border-color: #d22856;
+    border-color: #e5e5e5;
+  }
+
+  &:checked:hover + .checkbox-block__label::before {
+    border-color: $bluish;
+  }
+
+  &:checked:active + .checkbox-block__label::before {
+    border-color: $pink;
   }
 
   &:checked + .checkbox-block__label::after {
