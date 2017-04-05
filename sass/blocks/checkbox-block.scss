@@ -10,16 +10,8 @@
   padding-left: 70px;
   font-size: 18px;
   line-height: 39px;
-  color: #283645;
+  color: $bluish;
   cursor: pointer;
-
-  &:hover::before {
-    border-color: $bluish;
-  }
-
-  &:active::before {
-    border-color: $pink;
-  }
 
   &::before {
     position: absolute;
@@ -32,20 +24,39 @@
     top: -8px;
     left: 0
   }
+
+  &:hover::before {
+    border-color: $bluish;
+  }
+
+  &:active::before {
+    border-color: $pink;
+  }
+
+  &:active::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 22px;
+    height: 16px;
+    top: 2px;
+    left: 9px;
+    background: url('../img/icon-yes-form.svg');
+  }
 }
 
 .checkbox-block__input {
   display: none;
 
-  &:checked + .checkbox-block__label::before {
-    border-color: #e5e5e5;
-  }
-
-  &:checked:hover + .checkbox-block__label::before {
+  &:checked + .checkbox-block__label:hover::before {
     border-color: $bluish;
   }
 
-  &:checked:active + .checkbox-block__label::before {
+  &:checked + .checkbox-block__label:active::after {
+    background: #ffffff;
+  }
+
+  &:checked + .checkbox-block__label:active::before {
     border-color: $pink;
   }
 
